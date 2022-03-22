@@ -1,0 +1,709 @@
+fileFormatVersion: 2
+guid: c16c3e597f4114449ac6ef64c6b287a9
+timeCreated: 1517917278
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Circle002
+    100002: //RootNode
+    100004: vulture_Beak-nub_bone
+    100006: vulture_Beak_bone
+    100008: vulture_Beak_ctrl
+    100010: vulture_Eyes_ctrl
+    100012: vulture_Head_bone
+    100014: vulture_Head_ctrl
+    100016: vulture_Hip_ctrl
+    100018: vulture_Jaw-nub_bone
+    100020: vulture_Jaw_bone
+    100022: vulture_Jaw_ctrl
+    100024: vulture_l_Ankle-nub_bone
+    100026: vulture_l_Ankle_bone
+    100028: vulture_l_Ankle_IK_ctrl
+    100030: vulture_l_Clav_bone
+    100032: vulture_l_Clavicle_ctrl
+    100034: vulture_l_Digit1_1_bone
+    100036: vulture_l_Digit1_1_ctrl
+    100038: vulture_l_Digit1_2-nub_bone
+    100040: vulture_l_Digit1_2_bone
+    100042: vulture_l_Digit2_1_bone
+    100044: vulture_l_Digit2_1_ctrl
+    100046: vulture_l_Digit2_2_bone
+    100048: vulture_l_Digit2_3-nub_bone
+    100050: vulture_l_Digit2_3_bone
+    100052: vulture_l_Digit3_1_bone
+    100054: vulture_l_Digit3_1_ctrl
+    100056: vulture_l_Digit3_2_bone
+    100058: vulture_l_Digit3_3_bone
+    100060: vulture_l_Digit3_4-nub_bone
+    100062: vulture_l_Digit3_4_bone
+    100064: vulture_l_Digit4_1_bone
+    100066: vulture_l_Digit4_1_ctrl
+    100068: vulture_l_Digit4_2_bone
+    100070: vulture_l_Digit4_3-nub_bone
+    100072: vulture_l_Digit4_3_bone
+    100074: vulture_l_Eye_mesh
+    100076: vulture_l_Eyelid-nub_bone
+    100078: vulture_l_Eyelid_bone
+    100080: vulture_l_Eyelid_ctrl
+    100082: vulture_l_EyelidUp-nub_bone
+    100084: vulture_l_EyelidUp_bone
+    100086: vulture_l_EyelidUp_ctrl
+    100088: vulture_l_Femur_bone
+    100090: vulture_l_Femur_ctrl
+    100092: vulture_l_Foot-nub_bone
+    100094: vulture_l_Foot_bone
+    100096: vulture_l_Foot_ctrl
+    100098: vulture_l_Foot_IKGoal
+    100100: vulture_l_Forearm_bone
+    100102: vulture_l_Forearm_ctrl
+    100104: vulture_l_Hand-nub_bone
+    100106: vulture_l_Hand_bone
+    100108: vulture_l_Hand_ctrl
+    100110: vulture_l_Shoulder_bone
+    100112: vulture_l_Shoulder_ctrl
+    100114: vulture_l_Tibia_bone
+    100116: vulture_Main_ctrl
+    100118: vulture_Mandible_bone
+    100120: vulture_Mandible_ctrl
+    100122: vulture_mesh
+    100124: vulture_Neck1_bone
+    100126: vulture_Neck2_bone
+    100128: vulture_Neck3_bone
+    100130: vulture_Neck4_bone
+    100132: vulture_Neck5_bone
+    100134: vulture_Neck_ctrl
+    100136: vulture_NeckBase_ctrl
+    100138: vulture_Pelvis_bone
+    100140: vulture_r_Ankle-nub_bone
+    100142: vulture_r_Ankle_bone
+    100144: vulture_r_Ankle_IK_ctrl
+    100146: vulture_r_Clav_bone
+    100148: vulture_r_Clavicle_ctrl
+    100150: vulture_r_Digit1_1_bone
+    100152: vulture_r_Digit1_1_ctrl
+    100154: vulture_r_Digit1_2-nub_bone
+    100156: vulture_r_Digit1_2_bone
+    100158: vulture_r_Digit2_1_bone
+    100160: vulture_r_Digit2_1_ctrl
+    100162: vulture_r_Digit2_2_bone
+    100164: vulture_r_Digit2_3-nub_bone
+    100166: vulture_r_Digit2_3_bone
+    100168: vulture_r_Digit3_1_bone
+    100170: vulture_r_Digit3_1_ctrl
+    100172: vulture_r_Digit3_2_bone
+    100174: vulture_r_Digit3_3_bone
+    100176: vulture_r_Digit3_4-nub_bone
+    100178: vulture_r_Digit3_4_bone
+    100180: vulture_r_Digit4_1_bone
+    100182: vulture_r_Digit4_1_ctrl
+    100184: vulture_r_Digit4_2_bone
+    100186: vulture_r_Digit4_3-nub_bone
+    100188: vulture_r_Digit4_3_bone
+    100190: vulture_r_Eye_mesh
+    100192: vulture_r_Eyelid-nub_bone
+    100194: vulture_r_Eyelid_bone
+    100196: vulture_r_Eyelid_ctrl
+    100198: vulture_r_Eyelid_mesh
+    100200: vulture_r_EyelidUp-nub_bone
+    100202: vulture_r_EyelidUp_bone
+    100204: vulture_r_EyelidUp_ctrl
+    100206: vulture_r_Femur_bone
+    100208: vulture_r_Foot-nub_bone
+    100210: vulture_r_Foot_bone
+    100212: vulture_r_Foot_ctrl
+    100214: vulture_r_Foot_IKGoal
+    100216: vulture_r_Forearm_bone
+    100218: vulture_r_Forearm_ctrl
+    100220: vulture_r_Hand-nub_bone
+    100222: vulture_r_Hand_bone
+    100224: vulture_r_Hand_ctrl
+    100226: vulture_r_Shoulder_bone
+    100228: vulture_r_Shoulder_ctrl
+    100230: vulture_r_Tibia_bone
+    100232: vulture_Snout_bone
+    100234: vulture_Spine1_bone
+    100236: vulture_Spine2_bone
+    100238: vulture_Spine3_bone
+    100240: vulture_SpineBase_ctrl
+    100242: vulture_Tail-nub_bone
+    100244: vulture_Tail_bone
+    100246: vulture_Tail_ctrl
+    100248: vulture_Tail_mesh
+    100250: vulture_Wings_mesh
+    100252: vuture_COM_ctrl
+    100254: vuture_Feather-nub_bone
+    100256: vuture_Feather_bone
+    100258: vuture_l_Feather1-nub_bone
+    100260: vuture_l_Feather1_bone
+    100262: vuture_l_Feather1_ctrl
+    100264: vuture_l_Feather2-nub_bone
+    100266: vuture_l_Feather2_bone
+    100268: vuture_l_Feather2_ctrl
+    100270: vuture_r_Feather1-nub_bone
+    100272: vuture_r_Feather1_bone
+    100274: vuture_r_Feather1_ctrl
+    100276: vuture_r_Feather2-nub_bone
+    100278: vuture_r_Feather2_bone
+    100280: vuture_r_Feather2_ctrl
+    400000: Circle002
+    400002: //RootNode
+    400004: vulture_Beak-nub_bone
+    400006: vulture_Beak_bone
+    400008: vulture_Beak_ctrl
+    400010: vulture_Eyes_ctrl
+    400012: vulture_Head_bone
+    400014: vulture_Head_ctrl
+    400016: vulture_Hip_ctrl
+    400018: vulture_Jaw-nub_bone
+    400020: vulture_Jaw_bone
+    400022: vulture_Jaw_ctrl
+    400024: vulture_l_Ankle-nub_bone
+    400026: vulture_l_Ankle_bone
+    400028: vulture_l_Ankle_IK_ctrl
+    400030: vulture_l_Clav_bone
+    400032: vulture_l_Clavicle_ctrl
+    400034: vulture_l_Digit1_1_bone
+    400036: vulture_l_Digit1_1_ctrl
+    400038: vulture_l_Digit1_2-nub_bone
+    400040: vulture_l_Digit1_2_bone
+    400042: vulture_l_Digit2_1_bone
+    400044: vulture_l_Digit2_1_ctrl
+    400046: vulture_l_Digit2_2_bone
+    400048: vulture_l_Digit2_3-nub_bone
+    400050: vulture_l_Digit2_3_bone
+    400052: vulture_l_Digit3_1_bone
+    400054: vulture_l_Digit3_1_ctrl
+    400056: vulture_l_Digit3_2_bone
+    400058: vulture_l_Digit3_3_bone
+    400060: vulture_l_Digit3_4-nub_bone
+    400062: vulture_l_Digit3_4_bone
+    400064: vulture_l_Digit4_1_bone
+    400066: vulture_l_Digit4_1_ctrl
+    400068: vulture_l_Digit4_2_bone
+    400070: vulture_l_Digit4_3-nub_bone
+    400072: vulture_l_Digit4_3_bone
+    400074: vulture_l_Eye_mesh
+    400076: vulture_l_Eyelid-nub_bone
+    400078: vulture_l_Eyelid_bone
+    400080: vulture_l_Eyelid_ctrl
+    400082: vulture_l_EyelidUp-nub_bone
+    400084: vulture_l_EyelidUp_bone
+    400086: vulture_l_EyelidUp_ctrl
+    400088: vulture_l_Femur_bone
+    400090: vulture_l_Femur_ctrl
+    400092: vulture_l_Foot-nub_bone
+    400094: vulture_l_Foot_bone
+    400096: vulture_l_Foot_ctrl
+    400098: vulture_l_Foot_IKGoal
+    400100: vulture_l_Forearm_bone
+    400102: vulture_l_Forearm_ctrl
+    400104: vulture_l_Hand-nub_bone
+    400106: vulture_l_Hand_bone
+    400108: vulture_l_Hand_ctrl
+    400110: vulture_l_Shoulder_bone
+    400112: vulture_l_Shoulder_ctrl
+    400114: vulture_l_Tibia_bone
+    400116: vulture_Main_ctrl
+    400118: vulture_Mandible_bone
+    400120: vulture_Mandible_ctrl
+    400122: vulture_mesh
+    400124: vulture_Neck1_bone
+    400126: vulture_Neck2_bone
+    400128: vulture_Neck3_bone
+    400130: vulture_Neck4_bone
+    400132: vulture_Neck5_bone
+    400134: vulture_Neck_ctrl
+    400136: vulture_NeckBase_ctrl
+    400138: vulture_Pelvis_bone
+    400140: vulture_r_Ankle-nub_bone
+    400142: vulture_r_Ankle_bone
+    400144: vulture_r_Ankle_IK_ctrl
+    400146: vulture_r_Clav_bone
+    400148: vulture_r_Clavicle_ctrl
+    400150: vulture_r_Digit1_1_bone
+    400152: vulture_r_Digit1_1_ctrl
+    400154: vulture_r_Digit1_2-nub_bone
+    400156: vulture_r_Digit1_2_bone
+    400158: vulture_r_Digit2_1_bone
+    400160: vulture_r_Digit2_1_ctrl
+    400162: vulture_r_Digit2_2_bone
+    400164: vulture_r_Digit2_3-nub_bone
+    400166: vulture_r_Digit2_3_bone
+    400168: vulture_r_Digit3_1_bone
+    400170: vulture_r_Digit3_1_ctrl
+    400172: vulture_r_Digit3_2_bone
+    400174: vulture_r_Digit3_3_bone
+    400176: vulture_r_Digit3_4-nub_bone
+    400178: vulture_r_Digit3_4_bone
+    400180: vulture_r_Digit4_1_bone
+    400182: vulture_r_Digit4_1_ctrl
+    400184: vulture_r_Digit4_2_bone
+    400186: vulture_r_Digit4_3-nub_bone
+    400188: vulture_r_Digit4_3_bone
+    400190: vulture_r_Eye_mesh
+    400192: vulture_r_Eyelid-nub_bone
+    400194: vulture_r_Eyelid_bone
+    400196: vulture_r_Eyelid_ctrl
+    400198: vulture_r_Eyelid_mesh
+    400200: vulture_r_EyelidUp-nub_bone
+    400202: vulture_r_EyelidUp_bone
+    400204: vulture_r_EyelidUp_ctrl
+    400206: vulture_r_Femur_bone
+    400208: vulture_r_Foot-nub_bone
+    400210: vulture_r_Foot_bone
+    400212: vulture_r_Foot_ctrl
+    400214: vulture_r_Foot_IKGoal
+    400216: vulture_r_Forearm_bone
+    400218: vulture_r_Forearm_ctrl
+    400220: vulture_r_Hand-nub_bone
+    400222: vulture_r_Hand_bone
+    400224: vulture_r_Hand_ctrl
+    400226: vulture_r_Shoulder_bone
+    400228: vulture_r_Shoulder_ctrl
+    400230: vulture_r_Tibia_bone
+    400232: vulture_Snout_bone
+    400234: vulture_Spine1_bone
+    400236: vulture_Spine2_bone
+    400238: vulture_Spine3_bone
+    400240: vulture_SpineBase_ctrl
+    400242: vulture_Tail-nub_bone
+    400244: vulture_Tail_bone
+    400246: vulture_Tail_ctrl
+    400248: vulture_Tail_mesh
+    400250: vulture_Wings_mesh
+    400252: vuture_COM_ctrl
+    400254: vuture_Feather-nub_bone
+    400256: vuture_Feather_bone
+    400258: vuture_l_Feather1-nub_bone
+    400260: vuture_l_Feather1_bone
+    400262: vuture_l_Feather1_ctrl
+    400264: vuture_l_Feather2-nub_bone
+    400266: vuture_l_Feather2_bone
+    400268: vuture_l_Feather2_ctrl
+    400270: vuture_r_Feather1-nub_bone
+    400272: vuture_r_Feather1_bone
+    400274: vuture_r_Feather1_ctrl
+    400276: vuture_r_Feather2-nub_bone
+    400278: vuture_r_Feather2_bone
+    400280: vuture_r_Feather2_ctrl
+    2300000: vulture_l_Ankle_IK_ctrl
+    2300002: vulture_l_Digit1_1_ctrl
+    2300004: vulture_l_Digit2_1_ctrl
+    2300006: vulture_l_Digit3_1_ctrl
+    2300008: vulture_l_Digit4_1_ctrl
+    2300010: vulture_l_Eye_mesh
+    2300012: vulture_r_Ankle_IK_ctrl
+    2300014: vulture_r_Digit1_1_ctrl
+    2300016: vulture_r_Digit2_1_ctrl
+    2300018: vulture_r_Digit3_1_ctrl
+    2300020: vulture_r_Digit4_1_ctrl
+    2300022: vulture_r_Eye_mesh
+    3300000: vulture_l_Ankle_IK_ctrl
+    3300002: vulture_l_Digit1_1_ctrl
+    3300004: vulture_l_Digit2_1_ctrl
+    3300006: vulture_l_Digit3_1_ctrl
+    3300008: vulture_l_Digit4_1_ctrl
+    3300010: vulture_l_Eye_mesh
+    3300012: vulture_r_Ankle_IK_ctrl
+    3300014: vulture_r_Digit1_1_ctrl
+    3300016: vulture_r_Digit2_1_ctrl
+    3300018: vulture_r_Digit3_1_ctrl
+    3300020: vulture_r_Digit4_1_ctrl
+    3300022: vulture_r_Eye_mesh
+    4300000: vulture_mesh
+    4300002: vulture_Wings_mesh
+    4300004: vulture_Tail_mesh
+    4300006: vulture_r_Eyelid_mesh
+    4300008: vulture_r_Digit4_1_ctrl
+    4300010: vulture_r_Digit3_1_ctrl
+    4300012: vulture_r_Digit2_1_ctrl
+    4300014: vulture_r_Digit1_1_ctrl
+    4300016: vulture_l_Digit1_1_ctrl
+    4300018: vulture_l_Digit2_1_ctrl
+    4300020: vulture_l_Digit3_1_ctrl
+    4300022: vulture_l_Digit4_1_ctrl
+    4300024: vulture_r_Ankle_IK_ctrl
+    4300026: vulture_l_Ankle_IK_ctrl
+    4300028: vulture_r_Eye_mesh
+    4300030: vulture_l_Eye_mesh
+    7400000: fly
+    9500000: //RootNode
+    13700000: vulture_mesh
+    13700002: vulture_r_Eyelid_mesh
+    13700004: vulture_Tail_mesh
+    13700006: vulture_Wings_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: fly
+      takeName: Take 001
+      firstFrame: 79
+      lastFrame: 97
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: vulture_Head_ctrl
+        weight: 1
+      - path: vulture_Hip_ctrl
+        weight: 1
+      - path: vulture_l_Foot_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit1_1_ctrl
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit1_1_ctrl/vulture_l_Digit1_1_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit1_1_ctrl/vulture_l_Digit1_1_bone/vulture_l_Digit1_2_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit1_1_ctrl/vulture_l_Digit1_1_bone/vulture_l_Digit1_2_bone/vulture_l_Digit1_2-nub_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit2_1_ctrl
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit2_1_ctrl/vulture_l_Digit2_1_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit2_1_ctrl/vulture_l_Digit2_1_bone/vulture_l_Digit2_2_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit2_1_ctrl/vulture_l_Digit2_1_bone/vulture_l_Digit2_2_bone/vulture_l_Digit2_3_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit2_1_ctrl/vulture_l_Digit2_1_bone/vulture_l_Digit2_2_bone/vulture_l_Digit2_3_bone/vulture_l_Digit2_3-nub_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit3_1_ctrl
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit3_1_ctrl/vulture_l_Digit3_1_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit3_1_ctrl/vulture_l_Digit3_1_bone/vulture_l_Digit3_2_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit3_1_ctrl/vulture_l_Digit3_1_bone/vulture_l_Digit3_2_bone/vulture_l_Digit3_3_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit3_1_ctrl/vulture_l_Digit3_1_bone/vulture_l_Digit3_2_bone/vulture_l_Digit3_3_bone/vulture_l_Digit3_4_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit3_1_ctrl/vulture_l_Digit3_1_bone/vulture_l_Digit3_2_bone/vulture_l_Digit3_3_bone/vulture_l_Digit3_4_bone/vulture_l_Digit3_4-nub_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit4_1_ctrl
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit4_1_ctrl/vulture_l_Digit4_1_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit4_1_ctrl/vulture_l_Digit4_1_bone/vulture_l_Digit4_2_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit4_1_ctrl/vulture_l_Digit4_1_bone/vulture_l_Digit4_2_bone/vulture_l_Digit4_3_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Digit4_1_ctrl/vulture_l_Digit4_1_bone/vulture_l_Digit4_2_bone/vulture_l_Digit4_3_bone/vulture_l_Digit4_3-nub_bone
+        weight: 1
+      - path: vulture_l_Foot_bone/vulture_l_Foot-nub_bone
+        weight: 1
+      - path: vulture_l_Foot_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vulture_l_Ankle_IK_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vulture_l_Ankle_IK_ctrl/vulture_l_Foot_IKGoal
+        weight: 1
+      - path: vulture_Main_ctrl/vulture_r_Ankle_IK_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vulture_r_Ankle_IK_ctrl/vulture_r_Foot_IKGoal
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/Circle002
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_l_Femur_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_l_Femur_bone/vulture_l_Tibia_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_l_Femur_bone/vulture_l_Tibia_bone/vulture_l_Ankle_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_l_Femur_bone/vulture_l_Tibia_bone/vulture_l_Ankle_bone/vulture_l_Ankle-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_l_Femur_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_r_Femur_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_r_Femur_bone/vulture_r_Tibia_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_r_Femur_bone/vulture_r_Tibia_bone/vulture_r_Ankle_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_r_Femur_bone/vulture_r_Tibia_bone/vulture_r_Ankle_bone/vulture_r_Ankle-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vulture_Tail-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_Feather_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_Feather_bone/vuture_Feather-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_l_Feather1_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_l_Feather1_bone/vuture_l_Feather1-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_l_Feather1_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_l_Feather2_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_l_Feather2_bone/vuture_l_Feather2-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_l_Feather2_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_r_Feather1_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_r_Feather1_bone/vuture_r_Feather1-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_r_Feather1_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_r_Feather2_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_r_Feather2_bone/vuture_r_Feather2-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Pelvis_bone/vulture_Tail_bone/vuture_r_Feather2_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_bone/vulture_l_Forearm_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_bone/vulture_l_Forearm_bone/vulture_l_Hand_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_bone/vulture_l_Forearm_bone/vulture_l_Hand_bone/vulture_l_Hand-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_ctrl/vulture_l_Forearm_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clav_bone/vulture_l_Shoulder_ctrl/vulture_l_Forearm_ctrl/vulture_l_Hand_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_l_Clavicle_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Beak_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Eyes_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_Eye_mesh
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_Eyelid_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_Eyelid_bone/vulture_l_Eyelid-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_Eyelid_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_EyelidUp_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_EyelidUp_bone/vulture_l_EyelidUp-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_l_EyelidUp_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Mandible_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Mandible_bone/vulture_Jaw_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Mandible_bone/vulture_Jaw_bone/vulture_Jaw-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Mandible_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Mandible_ctrl/vulture_Jaw_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_Eye_mesh
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_Eyelid_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_Eyelid_bone/vulture_r_Eyelid-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_Eyelid_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_EyelidUp_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_EyelidUp_bone/vulture_r_EyelidUp-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_r_EyelidUp_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Snout_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Snout_bone/vulture_Beak_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_Neck1_bone/vulture_Neck2_bone/vulture_Neck3_bone/vulture_Neck4_bone/vulture_Neck5_bone/vulture_Head_bone/vulture_Snout_bone/vulture_Beak_bone/vulture_Beak-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_bone/vulture_r_Forearm_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_bone/vulture_r_Forearm_bone/vulture_r_Hand_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_bone/vulture_r_Forearm_bone/vulture_r_Hand_bone/vulture_r_Hand-nub_bone
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_ctrl/vulture_r_Forearm_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clav_bone/vulture_r_Shoulder_ctrl/vulture_r_Forearm_ctrl/vulture_r_Hand_ctrl
+        weight: 1
+      - path: vulture_Main_ctrl/vuture_COM_ctrl/vulture_Spine1_bone/vulture_Spine2_bone/vulture_Spine3_bone/vulture_r_Clavicle_ctrl
+        weight: 1
+      - path: vulture_mesh
+        weight: 1
+      - path: vulture_Neck_ctrl
+        weight: 1
+      - path: vulture_NeckBase_ctrl
+        weight: 1
+      - path: vulture_r_Eyelid_mesh
+        weight: 1
+      - path: vulture_r_Foot_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit1_1_ctrl
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit1_1_ctrl/vulture_r_Digit1_1_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit1_1_ctrl/vulture_r_Digit1_1_bone/vulture_r_Digit1_2_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit1_1_ctrl/vulture_r_Digit1_1_bone/vulture_r_Digit1_2_bone/vulture_r_Digit1_2-nub_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit2_1_ctrl
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit2_1_ctrl/vulture_r_Digit4_1_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit2_1_ctrl/vulture_r_Digit4_1_bone/vulture_r_Digit4_2_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit2_1_ctrl/vulture_r_Digit4_1_bone/vulture_r_Digit4_2_bone/vulture_r_Digit4_3_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit2_1_ctrl/vulture_r_Digit4_1_bone/vulture_r_Digit4_2_bone/vulture_r_Digit4_3_bone/vulture_r_Digit4_3-nub_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit3_1_ctrl
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit3_1_ctrl/vulture_r_Digit3_1_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit3_1_ctrl/vulture_r_Digit3_1_bone/vulture_r_Digit3_2_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit3_1_ctrl/vulture_r_Digit3_1_bone/vulture_r_Digit3_2_bone/vulture_r_Digit3_3_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit3_1_ctrl/vulture_r_Digit3_1_bone/vulture_r_Digit3_2_bone/vulture_r_Digit3_3_bone/vulture_r_Digit3_4_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit3_1_ctrl/vulture_r_Digit3_1_bone/vulture_r_Digit3_2_bone/vulture_r_Digit3_3_bone/vulture_r_Digit3_4_bone/vulture_r_Digit3_4-nub_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit4_1_ctrl
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit4_1_ctrl/vulture_r_Digit2_1_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit4_1_ctrl/vulture_r_Digit2_1_bone/vulture_r_Digit2_2_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit4_1_ctrl/vulture_r_Digit2_1_bone/vulture_r_Digit2_2_bone/vulture_r_Digit2_3_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Digit4_1_ctrl/vulture_r_Digit2_1_bone/vulture_r_Digit2_2_bone/vulture_r_Digit2_3_bone/vulture_r_Digit2_3-nub_bone
+        weight: 1
+      - path: vulture_r_Foot_bone/vulture_r_Foot-nub_bone
+        weight: 1
+      - path: vulture_r_Foot_ctrl
+        weight: 1
+      - path: vulture_SpineBase_ctrl
+        weight: 1
+      - path: vulture_Tail_ctrl
+        weight: 1
+      - path: vulture_Tail_mesh
+        weight: 1
+      - path: vulture_Wings_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 79
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: vulture_Main_ctrl
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

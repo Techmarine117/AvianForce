@@ -1,0 +1,711 @@
+fileFormatVersion: 2
+guid: c9db35ca78a9495458583bddce0507d9
+timeCreated: 1548414160
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bird_Body_mesh
+    100004: bird_COM_ctrl
+    100006: bird_Feather-nub_bone
+    100008: bird_Feather_bone
+    100010: bird_Feather_ctrl
+    100012: bird_Head-nub_bone
+    100014: bird_Head_bone
+    100016: bird_Head_ctrl
+    100018: bird_Hip_ctrl
+    100020: bird_l_ball_IKGoal
+    100022: bird_l_DigitI-1_bone
+    100024: bird_l_DigitI-2-nub_bone
+    100026: bird_l_DigitI-2_bone
+    100028: bird_l_DigitI_ctrl
+    100030: bird_l_DigitII_1_bone
+    100032: bird_l_DigitII_2_bone
+    100034: bird_l_DigitII_3-nub_bone
+    100036: bird_l_DigitII_3_bone
+    100038: bird_l_DigitII_ctrl
+    100040: bird_l_DigitIII_1_bone
+    100042: bird_l_DigitIII_2_bone
+    100044: bird_l_DigitIII_3-nub_bone
+    100046: bird_l_DigitIII_3_bone
+    100048: bird_l_DigitIII_ctrl
+    100050: bird_l_Eye-nub_bone
+    100052: bird_l_Eye_bone
+    100054: bird_l_Eye_ctrl
+    100056: bird_l_Eye_mesh
+    100058: bird_l_EyelidLower-nub_bone
+    100060: bird_l_EyelidLower_bone
+    100062: bird_l_EyelidLower_ctrl
+    100064: bird_l_EyelidUpper-nub_bone
+    100066: bird_l_EyelidUpper_bone
+    100068: bird_l_EyelidUpper_ctrl
+    100070: bird_l_Feather1-nub_bone
+    100072: bird_l_Feather1_bone
+    100074: bird_l_Feather1_ctrl
+    100076: bird_l_Feather2-nub_bone
+    100078: bird_l_Feather2_bone
+    100080: bird_l_Feather2_ctrl
+    100082: bird_l_Femur_bone
+    100084: bird_l_Foot-nub_bone
+    100086: bird_l_Foot_bone
+    100088: bird_l_Foot_ctrl
+    100090: bird_l_Heel_hlp
+    100092: bird_l_heel_IKGoal
+    100094: bird_l_HeelPeel_hlp
+    100096: bird_l_Humerus_bone
+    100098: bird_l_Humerus_ctrl
+    100100: bird_l_Metacarpus-nub_bone
+    100102: bird_l_Metacarpus_bone
+    100104: bird_l_Metacarpus_ctrl
+    100106: bird_l_Tarso_bone
+    100108: bird_l_Tibia_bone
+    100110: bird_l_toe_IKGoal
+    100112: bird_l_ToeLift_hlp
+    100114: bird_l_ToeTap_hlp
+    100116: bird_l_Ulna_bone
+    100118: bird_l_Ulna_ctrl
+    100120: bird_l_WingFeather1-nub_bone
+    100122: bird_l_WingFeather1_bone
+    100124: bird_l_WingFeather1_ctrl
+    100126: bird_l_WingFeather2-nub_bone
+    100128: bird_l_WingFeather2_bone
+    100130: bird_l_WingFeather2_ctrl
+    100132: bird_l_WingFeather3-nub_bone
+    100134: bird_l_WingFeather3_bone
+    100136: bird_l_WingFeather3_ctrl
+    100138: bird_Main_ctrl
+    100140: bird_Mandible-nub_bone
+    100142: bird_Mandible_bone
+    100144: bird_Mandible_ctrl
+    100146: bird_Maxilla-nub_bone
+    100148: bird_Maxilla_bone
+    100150: bird_Maxilla_ctrl
+    100152: bird_Neck_bone
+    100154: bird_NeckBase_ctrl
+    100156: bird_Pelvis_bone
+    100158: bird_r_ball_IKGoal
+    100160: bird_r_DigitI-1_bone
+    100162: bird_r_DigitI-2-nub_bone
+    100164: bird_r_DigitI-2_bone
+    100166: bird_r_DigitI_ctrl
+    100168: bird_r_DigitII_1_bone
+    100170: bird_r_DigitII_2_bone
+    100172: bird_r_DigitII_3-nub_bone
+    100174: bird_r_DigitII_3_bone
+    100176: bird_r_DigitII_bone
+    100178: bird_r_DigitIII_1_bone
+    100180: bird_r_DigitIII_2_bone
+    100182: bird_r_DigitIII_3-nub_bone
+    100184: bird_r_DigitIII_3_bone
+    100186: bird_r_DigitIII_ctrl
+    100188: bird_r_Eye-nub_bone
+    100190: bird_r_Eye_bone
+    100192: bird_r_Eye_ctrl
+    100194: bird_r_EyelidLower-nub_bone
+    100196: bird_r_EyelidLower_bone
+    100198: bird_r_EyelidLower_ctrl
+    100200: bird_r_EyelidUpper-nub_bone
+    100202: bird_r_EyelidUpper_bone
+    100204: bird_r_EyelidUpper_ctrl
+    100206: bird_r_Feather1-nub_bone
+    100208: bird_r_Feather1_bone
+    100210: bird_r_Feather1_ctrl
+    100212: bird_r_Feather2-nub_bone
+    100214: bird_r_Feather2_bone
+    100216: bird_r_Feather2_ctrl
+    100218: bird_r_Femur_bone
+    100220: bird_r_Foot-nub_bone
+    100222: bird_r_Foot_bone
+    100224: bird_r_Foot_ctrl
+    100226: bird_r_Heel_hlp
+    100228: bird_r_heel_IKGoal
+    100230: bird_r_HeelPeel_hlp
+    100232: bird_r_Humerus_bone
+    100234: bird_r_Humerus_ctrl
+    100236: bird_r_Metacarpus-nub_bone
+    100238: bird_r_Metacarpus_bone
+    100240: bird_r_Metacarpus_ctrl
+    100242: bird_r_Tarso_bone
+    100244: bird_r_Tibia_bone
+    100246: bird_r_toe_IKGoal
+    100248: bird_r_ToeLift_hlp
+    100250: bird_r_ToeTap_hlp
+    100252: bird_r_Ulna_bone
+    100254: bird_r_Ulna_ctrl
+    100256: bird_r_WingFeather1-nub_bone
+    100258: bird_r_WingFeather1_bone
+    100260: bird_r_WingFeather1_ctrl
+    100262: bird_r_WingFeather2-nub_bone
+    100264: bird_r_WingFeather2_bone
+    100266: bird_r_WingFeather2_ctrl
+    100268: bird_r_WingFeather3-nub_bone
+    100270: bird_r_WingFeather3_bone
+    100272: bird_r_WingFeather3_ctrl
+    100274: bird_Spine1_bone
+    100276: bird_Spine2_bone
+    100278: bird_Spine3_bone
+    100280: bird_SpineBase_ctrl
+    100282: bird_Tail-nub_bone
+    100284: bird_Tail_bone
+    100286: bird_Tail_ctrl
+    100288: bird_wings_mesh
+    400000: //RootNode
+    400002: bird_Body_mesh
+    400004: bird_COM_ctrl
+    400006: bird_Feather-nub_bone
+    400008: bird_Feather_bone
+    400010: bird_Feather_ctrl
+    400012: bird_Head-nub_bone
+    400014: bird_Head_bone
+    400016: bird_Head_ctrl
+    400018: bird_Hip_ctrl
+    400020: bird_l_ball_IKGoal
+    400022: bird_l_DigitI-1_bone
+    400024: bird_l_DigitI-2-nub_bone
+    400026: bird_l_DigitI-2_bone
+    400028: bird_l_DigitI_ctrl
+    400030: bird_l_DigitII_1_bone
+    400032: bird_l_DigitII_2_bone
+    400034: bird_l_DigitII_3-nub_bone
+    400036: bird_l_DigitII_3_bone
+    400038: bird_l_DigitII_ctrl
+    400040: bird_l_DigitIII_1_bone
+    400042: bird_l_DigitIII_2_bone
+    400044: bird_l_DigitIII_3-nub_bone
+    400046: bird_l_DigitIII_3_bone
+    400048: bird_l_DigitIII_ctrl
+    400050: bird_l_Eye-nub_bone
+    400052: bird_l_Eye_bone
+    400054: bird_l_Eye_ctrl
+    400056: bird_l_Eye_mesh
+    400058: bird_l_EyelidLower-nub_bone
+    400060: bird_l_EyelidLower_bone
+    400062: bird_l_EyelidLower_ctrl
+    400064: bird_l_EyelidUpper-nub_bone
+    400066: bird_l_EyelidUpper_bone
+    400068: bird_l_EyelidUpper_ctrl
+    400070: bird_l_Feather1-nub_bone
+    400072: bird_l_Feather1_bone
+    400074: bird_l_Feather1_ctrl
+    400076: bird_l_Feather2-nub_bone
+    400078: bird_l_Feather2_bone
+    400080: bird_l_Feather2_ctrl
+    400082: bird_l_Femur_bone
+    400084: bird_l_Foot-nub_bone
+    400086: bird_l_Foot_bone
+    400088: bird_l_Foot_ctrl
+    400090: bird_l_Heel_hlp
+    400092: bird_l_heel_IKGoal
+    400094: bird_l_HeelPeel_hlp
+    400096: bird_l_Humerus_bone
+    400098: bird_l_Humerus_ctrl
+    400100: bird_l_Metacarpus-nub_bone
+    400102: bird_l_Metacarpus_bone
+    400104: bird_l_Metacarpus_ctrl
+    400106: bird_l_Tarso_bone
+    400108: bird_l_Tibia_bone
+    400110: bird_l_toe_IKGoal
+    400112: bird_l_ToeLift_hlp
+    400114: bird_l_ToeTap_hlp
+    400116: bird_l_Ulna_bone
+    400118: bird_l_Ulna_ctrl
+    400120: bird_l_WingFeather1-nub_bone
+    400122: bird_l_WingFeather1_bone
+    400124: bird_l_WingFeather1_ctrl
+    400126: bird_l_WingFeather2-nub_bone
+    400128: bird_l_WingFeather2_bone
+    400130: bird_l_WingFeather2_ctrl
+    400132: bird_l_WingFeather3-nub_bone
+    400134: bird_l_WingFeather3_bone
+    400136: bird_l_WingFeather3_ctrl
+    400138: bird_Main_ctrl
+    400140: bird_Mandible-nub_bone
+    400142: bird_Mandible_bone
+    400144: bird_Mandible_ctrl
+    400146: bird_Maxilla-nub_bone
+    400148: bird_Maxilla_bone
+    400150: bird_Maxilla_ctrl
+    400152: bird_Neck_bone
+    400154: bird_NeckBase_ctrl
+    400156: bird_Pelvis_bone
+    400158: bird_r_ball_IKGoal
+    400160: bird_r_DigitI-1_bone
+    400162: bird_r_DigitI-2-nub_bone
+    400164: bird_r_DigitI-2_bone
+    400166: bird_r_DigitI_ctrl
+    400168: bird_r_DigitII_1_bone
+    400170: bird_r_DigitII_2_bone
+    400172: bird_r_DigitII_3-nub_bone
+    400174: bird_r_DigitII_3_bone
+    400176: bird_r_DigitII_bone
+    400178: bird_r_DigitIII_1_bone
+    400180: bird_r_DigitIII_2_bone
+    400182: bird_r_DigitIII_3-nub_bone
+    400184: bird_r_DigitIII_3_bone
+    400186: bird_r_DigitIII_ctrl
+    400188: bird_r_Eye-nub_bone
+    400190: bird_r_Eye_bone
+    400192: bird_r_Eye_ctrl
+    400194: bird_r_EyelidLower-nub_bone
+    400196: bird_r_EyelidLower_bone
+    400198: bird_r_EyelidLower_ctrl
+    400200: bird_r_EyelidUpper-nub_bone
+    400202: bird_r_EyelidUpper_bone
+    400204: bird_r_EyelidUpper_ctrl
+    400206: bird_r_Feather1-nub_bone
+    400208: bird_r_Feather1_bone
+    400210: bird_r_Feather1_ctrl
+    400212: bird_r_Feather2-nub_bone
+    400214: bird_r_Feather2_bone
+    400216: bird_r_Feather2_ctrl
+    400218: bird_r_Femur_bone
+    400220: bird_r_Foot-nub_bone
+    400222: bird_r_Foot_bone
+    400224: bird_r_Foot_ctrl
+    400226: bird_r_Heel_hlp
+    400228: bird_r_heel_IKGoal
+    400230: bird_r_HeelPeel_hlp
+    400232: bird_r_Humerus_bone
+    400234: bird_r_Humerus_ctrl
+    400236: bird_r_Metacarpus-nub_bone
+    400238: bird_r_Metacarpus_bone
+    400240: bird_r_Metacarpus_ctrl
+    400242: bird_r_Tarso_bone
+    400244: bird_r_Tibia_bone
+    400246: bird_r_toe_IKGoal
+    400248: bird_r_ToeLift_hlp
+    400250: bird_r_ToeTap_hlp
+    400252: bird_r_Ulna_bone
+    400254: bird_r_Ulna_ctrl
+    400256: bird_r_WingFeather1-nub_bone
+    400258: bird_r_WingFeather1_bone
+    400260: bird_r_WingFeather1_ctrl
+    400262: bird_r_WingFeather2-nub_bone
+    400264: bird_r_WingFeather2_bone
+    400266: bird_r_WingFeather2_ctrl
+    400268: bird_r_WingFeather3-nub_bone
+    400270: bird_r_WingFeather3_bone
+    400272: bird_r_WingFeather3_ctrl
+    400274: bird_Spine1_bone
+    400276: bird_Spine2_bone
+    400278: bird_Spine3_bone
+    400280: bird_SpineBase_ctrl
+    400282: bird_Tail-nub_bone
+    400284: bird_Tail_bone
+    400286: bird_Tail_ctrl
+    400288: bird_wings_mesh
+    2300000: bird_l_DigitI_ctrl
+    2300002: bird_l_DigitII_ctrl
+    2300004: bird_l_DigitIII_ctrl
+    2300006: bird_l_Foot_ctrl
+    2300008: bird_r_DigitII_bone
+    2300010: bird_r_Foot_ctrl
+    2300012: bird_r_DigitI_ctrl
+    2300014: bird_r_DigitIII_ctrl
+    3300000: bird_l_DigitI_ctrl
+    3300002: bird_l_DigitII_ctrl
+    3300004: bird_l_DigitIII_ctrl
+    3300006: bird_l_Foot_ctrl
+    3300008: bird_r_DigitII_bone
+    3300010: bird_r_Foot_ctrl
+    3300012: bird_r_DigitI_ctrl
+    3300014: bird_r_DigitIII_ctrl
+    4300000: bird_Body_mesh
+    4300002: bird_wings_mesh
+    4300004: bird_l_Eye_mesh
+    4300006: bird_r_Foot_ctrl
+    4300008: bird_l_Foot_ctrl
+    4300010: bird_r_DigitII_bone
+    4300012: bird_l_DigitI_ctrl
+    4300014: bird_l_DigitII_ctrl
+    4300016: bird_l_DigitIII_ctrl
+    4300018: bird_r_DigitIII_ctrl
+    4300020: bird_r_DigitI_ctrl
+    7400000: idle
+    9500000: //RootNode
+    13700000: bird_Body_mesh
+    13700002: bird_l_Eye_mesh
+    13700004: bird_wings_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.1
+    animationPositionError: 0.1
+    animationScaleError: 0.1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 286
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bird_Body_mesh
+        weight: 1
+      - path: bird_Head_ctrl
+        weight: 1
+      - path: bird_Hip_ctrl
+        weight: 1
+      - path: bird_l_Eye_mesh
+        weight: 1
+      - path: bird_Main_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitI-1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitI-1_bone/bird_l_DigitI-2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitI-1_bone/bird_l_DigitI-2_bone/bird_l_DigitI-2-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitI_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitII_1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitII_1_bone/bird_l_DigitII_2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitII_1_bone/bird_l_DigitII_2_bone/bird_l_DigitII_3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitII_1_bone/bird_l_DigitII_2_bone/bird_l_DigitII_3_bone/bird_l_DigitII_3-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitII_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitIII_1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitIII_1_bone/bird_l_DigitIII_2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitIII_1_bone/bird_l_DigitIII_2_bone/bird_l_DigitIII_3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitIII_1_bone/bird_l_DigitIII_2_bone/bird_l_DigitIII_3_bone/bird_l_DigitIII_3-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_DigitIII_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_l_Femur_bone/bird_l_Tibia_bone/bird_l_Tarso_bone/bird_l_Foot_bone/bird_l_Foot-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitI-1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitI-1_bone/bird_r_DigitI-2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitI-1_bone/bird_r_DigitI-2_bone/bird_r_DigitI-2-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitI_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitII_1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitII_1_bone/bird_r_DigitII_2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitII_1_bone/bird_r_DigitII_2_bone/bird_r_DigitII_3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitII_1_bone/bird_r_DigitII_2_bone/bird_r_DigitII_3_bone/bird_r_DigitII_3-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitII_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitIII_1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitIII_1_bone/bird_r_DigitIII_2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitIII_1_bone/bird_r_DigitIII_2_bone/bird_r_DigitIII_3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitIII_1_bone/bird_r_DigitIII_2_bone/bird_r_DigitIII_3_bone/bird_r_DigitIII_3-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_DigitIII_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_r_Femur_bone/bird_r_Tibia_bone/bird_r_Tarso_bone/bird_r_Foot_bone/bird_r_Foot-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_Metacarpus_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_Metacarpus_bone/bird_l_Metacarpus-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_Metacarpus_bone/bird_l_WingFeather3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_Metacarpus_bone/bird_l_WingFeather3_bone/bird_l_WingFeather3-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_Metacarpus_bone/bird_l_WingFeather3_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_WingFeather2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_WingFeather2_bone/bird_l_WingFeather2-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_Ulna_bone/bird_l_WingFeather2_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_WingFeather1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_WingFeather1_bone/bird_l_WingFeather1-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_bone/bird_l_WingFeather1_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_ctrl/bird_l_Ulna_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_l_Humerus_ctrl/bird_l_Ulna_ctrl/bird_l_Metacarpus_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Head-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_Eye_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_Eye_bone/bird_l_Eye-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_Eye_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_EyelidLower_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_EyelidLower_bone/bird_l_EyelidLower-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_EyelidLower_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_EyelidUpper_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_EyelidUpper_bone/bird_l_EyelidUpper-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_l_EyelidUpper_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Mandible_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Mandible_bone/bird_Mandible-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Mandible_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Maxilla_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Maxilla_bone/bird_Maxilla-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_Maxilla_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_Eye_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_Eye_bone/bird_r_Eye-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_Eye_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_EyelidLower_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_EyelidLower_bone/bird_r_EyelidLower-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_EyelidLower_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_EyelidUpper_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_EyelidUpper_bone/bird_r_EyelidUpper-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_Neck_bone/bird_Head_bone/bird_r_EyelidUpper_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_Metacarpus_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_Metacarpus_bone/bird_r_Metacarpus-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_Metacarpus_bone/bird_r_WingFeather3_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_Metacarpus_bone/bird_r_WingFeather3_bone/bird_r_WingFeather3-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_Metacarpus_bone/bird_r_WingFeather3_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_WingFeather2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_WingFeather2_bone/bird_r_WingFeather2-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_Ulna_bone/bird_r_WingFeather2_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_WingFeather1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_WingFeather1_bone/bird_r_WingFeather1-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_bone/bird_r_WingFeather1_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_ctrl/bird_r_Ulna_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Spine1_bone/bird_Spine2_bone/bird_Spine3_bone/bird_r_Humerus_ctrl/bird_r_Ulna_ctrl/bird_r_Metacarpus_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_Feather_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_Feather_bone/bird_Feather-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_Feather_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_l_Feather1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_l_Feather1_bone/bird_l_Feather1-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_l_Feather1_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_l_Feather2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_l_Feather2_bone/bird_l_Feather2-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_l_Feather2_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_r_Feather1_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_r_Feather1_bone/bird_r_Feather1-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_r_Feather1_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_r_Feather2_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_r_Feather2_bone/bird_r_Feather2-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_r_Feather2_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_bone/bird_Tail-nub_bone
+        weight: 1
+      - path: bird_Main_ctrl/bird_COM_ctrl/bird_Pelvis_bone/bird_Tail_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp/bird_l_ToeLift_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp/bird_l_ToeLift_hlp/bird_l_HeelPeel_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp/bird_l_ToeLift_hlp/bird_l_HeelPeel_hlp/bird_l_ball_IKGoal
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp/bird_l_ToeLift_hlp/bird_l_HeelPeel_hlp/bird_l_heel_IKGoal
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp/bird_l_ToeLift_hlp/bird_l_ToeTap_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_l_Foot_ctrl/bird_l_Heel_hlp/bird_l_ToeLift_hlp/bird_l_ToeTap_hlp/bird_l_toe_IKGoal
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp/bird_r_ToeLift_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp/bird_r_ToeLift_hlp/bird_r_HeelPeel_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp/bird_r_ToeLift_hlp/bird_r_HeelPeel_hlp/bird_r_ball_IKGoal
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp/bird_r_ToeLift_hlp/bird_r_HeelPeel_hlp/bird_r_heel_IKGoal
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp/bird_r_ToeLift_hlp/bird_r_ToeTap_hlp
+        weight: 1
+      - path: bird_Main_ctrl/bird_r_Foot_ctrl/bird_r_Heel_hlp/bird_r_ToeLift_hlp/bird_r_ToeTap_hlp/bird_r_toe_IKGoal
+        weight: 1
+      - path: bird_NeckBase_ctrl
+        weight: 1
+      - path: bird_SpineBase_ctrl
+        weight: 1
+      - path: bird_wings_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: bird_Main_ctrl
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

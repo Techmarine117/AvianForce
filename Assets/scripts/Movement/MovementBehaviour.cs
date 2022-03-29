@@ -12,8 +12,11 @@ public class MovementBehaviour : MonoBehaviour
 
     private Vector3 moveDirection;
 
-    
 
+    private void Start()
+    {
+        cam = Camera.main;
+    }
     public void UpdateMoveentData(Vector3 newMoveDirection)
     {
         moveDirection = newMoveDirection;

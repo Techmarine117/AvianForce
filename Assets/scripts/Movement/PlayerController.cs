@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    private int playerID;
+    private netWorking networkingScript;
+    private NetworkComponent nwc;
 
     public MovementBehaviour movement;
     public AnimationBehaviour movementAnimation;
@@ -20,7 +21,11 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         movementAnimation.setupBehaviour();
+        networkingScript = FindObjectOfType<netWorking>();
+        nwc = GetComponent<NetworkComponent>();
     }
+
+    
 
     public void OnMove(InputAction.CallbackContext value)
     {
@@ -31,9 +36,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        CalculateMovementInputSmoothing();
-        UpdatePlayerMovement();
-        UpdatePlayerAnimationMovement();
+        if (true) //networkingScript.GetPlayerID() == nwc.OwnerID)
+        {
+            CalculateMovementInputSmoothing();
+            UpdatePlayerMovement();
+            UpdatePlayerAnimationMovement();
+        }
     }
 
     void CalculateMovementInputSmoothing()
@@ -56,4 +64,6 @@ public class PlayerController : MonoBehaviour
     {
         movementAnimation.UpdateMovementAnimation(smoothInput.magnitude);
     }
+
+    
 }

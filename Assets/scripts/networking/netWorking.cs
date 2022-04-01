@@ -7,6 +7,7 @@ using System.Text;
 using CoreNetworking;
 using System;
 
+
 public class netWorking : MonoBehaviour
 {
     Socket socket;
@@ -27,6 +28,7 @@ public class netWorking : MonoBehaviour
         player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
         //instantiate player character
         InstantiateOverNetwork(GetPlayerName.CharacterType, Vector3.zero, Quaternion.identity);
+
     }
 
     public string GetPlayerID()

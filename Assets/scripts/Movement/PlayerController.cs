@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,9 +13,16 @@ public class PlayerController : MonoBehaviour
     public MovementBehaviour movement;
     public AnimationBehaviour movementAnimation;
     public PlayerInput playerInput;
+    public Guard guard;
     public float moventSmoothingSpeed = 1f;
     private Vector3 rawInputMovement;
     private Vector3 smoothInput;
+
+
+    private GameObject vcam;
+
+    [SerializeField]
+    bool isVulture;
 
     private string currentControlScheme;
 
@@ -23,6 +31,15 @@ public class PlayerController : MonoBehaviour
         movementAnimation.setupBehaviour();
         networkingScript = FindObjectOfType<netWorking>();
         nwc = GetComponent<NetworkComponent>();
+        vcam = GameObject.FindGameObjectWithTag("vCam");
+    }
+
+    public void OnAttack(InputAction.CallbackContext Value)
+    {
+        if (Value.started)
+        {
+            movementAnimation.PlayerAttackAnimation();
+        }
     }
 
     
@@ -36,8 +53,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (true) //networkingScript.GetPlayerID() == nwc.OwnerID)
+        if (true)//networkingScript.GetPlayerID() == nwc.OwnerID)
         {
+            if (vcam.GetComponent<CinemachineVirtualCamera>().Follow == null && vcam.GetComponent<CinemachineVirtualCamera>())
+            {
+                vcam.GetComponent<CinemachineVirtualCamera>().Follow = transform;
+                vcam.GetComponent<CinemachineVirtualCamera>().LookAt = transform;
+            }
             CalculateMovementInputSmoothing();
             UpdatePlayerMovement();
             UpdatePlayerAnimationMovement();
@@ -63,6 +85,22 @@ public class PlayerController : MonoBehaviour
     void UpdatePlayerAnimationMovement()
     {
         movementAnimation.UpdateMovementAnimation(smoothInput.magnitude);
+    }
+
+    void Damage()
+    {
+        if (isVulture)
+        {
+            // set the enemy health to 0%
+            guard.enemyHealth = 0;
+
+        }
+        else
+        {
+            // deduct health from the enemy
+            guard.enemyHealth -= 25;
+        }
+
     }
 
     

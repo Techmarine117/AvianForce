@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Guard : GAgent
 {
+    public int enemyHealth = 100;
     // Start is called before the first frame update
    new public void Start()
     {

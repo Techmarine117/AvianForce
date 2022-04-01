@@ -17,7 +17,7 @@ public class AnimationBehaviour : MonoBehaviour
     void setupAnimationIDs()
     {
         playerMovementAnimationID = Animator.StringToHash("Movement");
-        //playerAttackAnimationID = Animator.StringToHash("Attack");
+        playerAttackAnimationID = Animator.StringToHash("Attack");
     }
 
     public void UpdateMovementAnimation(float movementBlendValue)
@@ -27,7 +27,7 @@ public class AnimationBehaviour : MonoBehaviour
 
     public void PlayerAttackAnimation()
     {
-        
+        animator.SetTrigger(playerAttackAnimationID);
     }
 
 }

@@ -28,4 +28,14 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         
     }
+
+    public void CreateRoom()
+    {
+
+    }
+
+    public void JoinRoom()
+    {
+
+    }
 }

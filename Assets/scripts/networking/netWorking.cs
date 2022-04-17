@@ -27,6 +27,8 @@ public class netWorking : MonoBehaviour
 
         player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
         //instantiate player character
+
+        // Called when game scene loads.
         InstantiateOverNetwork(GetPlayerName.CharacterType, Vector3.zero, Quaternion.identity);
 
     }
@@ -35,6 +37,51 @@ public class netWorking : MonoBehaviour
     {
         return player.ID;
     }
+
+    public void ServerConnect()
+    {
+        socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        print("Connecting to server");
+        socket.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9000));
+        socket.Blocking = false;
+
+        isConnected = true;
+        print("Connected to server yay");
+
+        //fetch player name from db
+        player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
+    }
+
+    public void JoinLobby(string roomname)
+    {
+        if (isConnected)
+        {
+            // loop through lobbies / rooms
+            // connect to the lobby that has the same name as our roomname string
+        }
+    } 
+
+    public void RefreshLobbyList()
+    {
+        if (true)
+        {
+
+        }
+        //loops through the rooms in the server and displays them
+        
+    }
+
+    public void CreateRoom(string roomname)
+    {
+        if (isConnected)
+        {
+            // loop through lobbies / rooms
+            // if roomname is empty then use Player name + 's game (Brendan's game)
+            // Create a lobby if the roomname does not already Exist
+        }
+    }
+
+
 
     public void Update()
     {
@@ -57,6 +104,8 @@ public class netWorking : MonoBehaviour
                         {
                             RotationAndPositionPacket rpp = new RotationAndPositionPacket();
                             rpp.Deserialize(buffer);
+
+                            
                             break;
                         }
                     case BasePacket.PacketType.Instatite:

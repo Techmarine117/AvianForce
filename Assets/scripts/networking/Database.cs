@@ -25,14 +25,14 @@ public class Database : MonoBehaviour
     delegate void ReceivedJSON(string json);
     ReceivedJSON ReceivedJSONEvent;
     string mydata;
-    // Start is called before the first frame update
+
     void Start()
     {
-           //PlayerData playerData = new PlayerData("marine",12);
-           //string json = JsonUtility.ToJson(playerData);
-        
-        //StartCoroutine(HTTPCall("http://127.0.0.1:3000/save-user-data", json, "post"));
-        //StartCoroutine(HTTPCall("http://127.0.0.1:3000/find-user-data?username=marine=12","get" ));
+        PlayerData playerData = new PlayerData("marine",12);
+        string json = JsonUtility.ToJson(playerData);
+
+        //StartCoroutine(HTTPCall("http://127.0.0.1:3000/save-user-data", "post", json));
+        StartCoroutine(HTTPCall("http://127.0.0.1:3000/find-user-data?username=marine&id=12", "get"));
         print(mydata);
 
     }
@@ -45,19 +45,14 @@ public class Database : MonoBehaviour
         print(p.id);
     }
 
-    
-
-   
-
-    IEnumerable HTTPCall(string url,string method, string json = "")
+    IEnumerator HTTPCall(string url, string method, string json = "")
     {
         using (UnityWebRequest request = new UnityWebRequest(url, method))
         {
-            if(method == "post")
+            if (method == "post")
             {
-            byte[] data = Encoding.UTF8.GetBytes(json);
-            request.uploadHandler = new UploadHandlerRaw(data);
-
+                byte[] data = Encoding.UTF8.GetBytes(json);
+                request.uploadHandler = new UploadHandlerRaw(data);
             }
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
@@ -74,7 +69,6 @@ public class Database : MonoBehaviour
                 print("error");
                 print(request.error);
             }
-
         }
     }
 }

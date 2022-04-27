@@ -11,12 +11,12 @@ using System;
 public class PlayerData
 {
     public string username;
-    public int id;
+    public string id;
 
-    public PlayerData(string username, int id)
+    public PlayerData(string username, string playerID)
     {
         this.username = username;
-        this.id = id;
+        this.id = playerID;
     }
 }
 
@@ -28,7 +28,9 @@ public class Database : MonoBehaviour
 
     void Start()
     {
-        PlayerData playerData = new PlayerData("marine",12);
+        //text input
+        //netWorking script and GetPlayerID
+        PlayerData playerData = new PlayerData("marine","12");
         string json = JsonUtility.ToJson(playerData);
 
         //StartCoroutine(HTTPCall("http://127.0.0.1:3000/save-user-data", "post", json));

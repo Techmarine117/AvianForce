@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rokan\\OneDrive\\Desktop\\GPG230\\networking\\networking.core\\networking.core.csproj": {}
+    "C:\\Users\\Rokan\\AvianForce\\networking\\networking.core\\networking.core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rokan\\OneDrive\\Desktop\\GPG230\\networking\\networking.core\\networking.core.csproj": {
+    "C:\\Users\\Rokan\\AvianForce\\networking\\networking.core\\networking.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rokan\\OneDrive\\Desktop\\GPG230\\networking\\networking.core\\networking.core.csproj",
+        "projectUniqueName": "C:\\Users\\Rokan\\AvianForce\\networking\\networking.core\\networking.core.csproj",
         "projectName": "networking.core",
-        "projectPath": "C:\\Users\\Rokan\\OneDrive\\Desktop\\GPG230\\networking\\networking.core\\networking.core.csproj",
+        "projectPath": "C:\\Users\\Rokan\\AvianForce\\networking\\networking.core\\networking.core.csproj",
         "packagesPath": "C:\\Users\\Rokan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rokan\\OneDrive\\Desktop\\GPG230\\networking\\networking.core\\obj\\",
+        "outputPath": "C:\\Users\\Rokan\\AvianForce\\networking\\networking.core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

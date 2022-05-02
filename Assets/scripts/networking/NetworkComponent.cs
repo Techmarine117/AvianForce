@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NetworkComponent : MonoBehaviour
 {
-    public string OwnerID;
+    public int OwnerID;
     public string GameObjectID;
+    public string GameId;
     
 
     void Start()

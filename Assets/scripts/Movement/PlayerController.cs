@@ -21,8 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private GameObject vcam;
 
-    [SerializeField]
-    bool isVulture;
+    public bool isVulture;
 
     private string currentControlScheme;
 

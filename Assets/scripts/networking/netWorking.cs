@@ -25,7 +25,7 @@ public class netWorking : MonoBehaviour
         print("Connected to server yay");
         // fetch name then assign to player
 
-        player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
+       // player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
         //instantiate player character
 
         // Called when game scene loads.
@@ -33,7 +33,7 @@ public class netWorking : MonoBehaviour
 
     }
 
-    public string GetPlayerID()
+    public int GetPlayerID()
     {
         return player.ID;
     }
@@ -49,7 +49,7 @@ public class netWorking : MonoBehaviour
         print("Connected to server yay");
 
         //fetch player name from db
-        player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
+       // player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
     }
 
     public void JoinLobby(string roomname)
@@ -92,7 +92,7 @@ public class netWorking : MonoBehaviour
                 byte[] buffer = new byte[socket.Available];
                 socket.Receive(buffer);
 
-                BasePacket bp = new BasePacket();
+                BasePacket bp = new BasePacket(socket);
                 bp.Deserialize(buffer);
 
                 switch (bp.Type)
@@ -108,7 +108,7 @@ public class netWorking : MonoBehaviour
                             
                             break;
                         }
-                    case BasePacket.PacketType.Instatite:
+                    case BasePacket.PacketType.Instantiate:
                         {
                             InstantiatePacket ip = new InstantiatePacket();
                             ip.Deserialize(buffer);
@@ -131,6 +131,25 @@ public class netWorking : MonoBehaviour
                             DestroyObject(dp.GameObjectID);
                             break;
                         }
+
+                    case BasePacket.PacketType.HostGamePacket:
+                        {
+
+                            HostGamePacket Hp = new HostGamePacket();
+                            Hp.Deserialize(buffer);
+
+                            break;
+                        }
+
+                    case BasePacket.PacketType.JoinPacket:
+                    {
+
+                            break;
+                        }
+
+
+
+
                     default:
                         break;
                 }
@@ -144,7 +163,7 @@ public class netWorking : MonoBehaviour
         NetworkComponent nc = go.AddComponent<NetworkComponent>();
         nc.OwnerID = player.ID;
         nc.GameObjectID = Guid.NewGuid().ToString("N");
-        socket.Send(new InstantiatePacket(prefabName, position, rotation, nc.GameObjectID, player).Serialize());
+        socket.Send(new InstantiatePacket(prefabName, position, rotation, nc.GameObjectID).Serialize());
 
         return go;
     }
@@ -172,5 +191,12 @@ public class netWorking : MonoBehaviour
                 break;
             }
         }
+    }
+
+    void HostGame(int RoomId)
+    {
+
+       
+
     }
 }

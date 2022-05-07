@@ -13,6 +13,7 @@ public class netWorking : MonoBehaviour
     Socket socket;
     Player player;
     bool isConnected = false;
+    NetworkComponent nc;
 
     void Start()
     {
@@ -24,8 +25,8 @@ public class netWorking : MonoBehaviour
         isConnected = true;
         print("Connected to server yay");
         // fetch name then assign to player
-
-       // player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
+        int id = UnityEngine.Random.Range(0, 9999);
+        player = new Player(socket,id, GetPlayerName.pname);
         //instantiate player character
 
         // Called when game scene loads.
@@ -40,7 +41,7 @@ public class netWorking : MonoBehaviour
 
     public void ServerConnect()
     {
-        socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); //synchronous
         print("Connecting to server");
         socket.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9000));
         socket.Blocking = false;
@@ -51,36 +52,6 @@ public class netWorking : MonoBehaviour
         //fetch player name from db
        // player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
     }
-
-    public void JoinLobby(string roomname)
-    {
-        if (isConnected)
-        {
-            // loop through lobbies / rooms
-            // connect to the lobby that has the same name as our roomname string
-        }
-    } 
-
-    public void RefreshLobbyList()
-    {
-        if (true)
-        {
-
-        }
-        //loops through the rooms in the server and displays them
-        
-    }
-
-    public void CreateRoom(string roomname)
-    {
-        if (isConnected)
-        {
-            // loop through lobbies / rooms
-            // if roomname is empty then use Player name + 's game (Brendan's game)
-            // Create a lobby if the roomname does not already Exist
-        }
-    }
-
 
 
     public void Update()
@@ -138,15 +109,28 @@ public class netWorking : MonoBehaviour
                             HostGamePacket Hp = new HostGamePacket();
                             Hp.Deserialize(buffer);
 
+                            HostGame(Hp.RoomID , Hp.Player);
                             break;
                         }
 
                     case BasePacket.PacketType.JoinPacket:
                     {
+                            JoinPacket join = new JoinPacket();
+                            join.Deserialize(buffer);
 
                             break;
-                        }
+                    }
 
+
+                    case BasePacket.PacketType.Connection:
+                        {
+                            ConnectionPacket CP = new ConnectionPacket();
+                            CP.Deserialize(buffer);
+
+
+                            ConnectionInfo(CP.Player);
+                            break;
+                        }
 
 
 
@@ -160,7 +144,7 @@ public class netWorking : MonoBehaviour
     public GameObject InstantiateOverNetwork(string prefabName, Vector3 position, Quaternion rotation)
     {
         GameObject go = Instantiate(Resources.Load($"Prefab/{prefabName}"), position, rotation) as GameObject;
-        NetworkComponent nc = go.AddComponent<NetworkComponent>();
+         nc = go.AddComponent<NetworkComponent>();
         nc.OwnerID = player.ID;
         nc.GameObjectID = Guid.NewGuid().ToString("N");
         socket.Send(new InstantiatePacket(prefabName, position, rotation, nc.GameObjectID).Serialize());
@@ -171,7 +155,7 @@ public class netWorking : MonoBehaviour
     GameObject InstantiateFromResources(string prefabName, Vector3 position, Quaternion rotation, string gameObjectID, Player player)
     {
         GameObject go = Instantiate(Resources.Load($"Prefab/{prefabName}"), position, rotation) as GameObject;
-        NetworkComponent nc = go.AddComponent<NetworkComponent>();
+         nc = go.AddComponent<NetworkComponent>();
         nc.OwnerID = player.ID;
         nc.GameObjectID = gameObjectID;
 
@@ -193,9 +177,22 @@ public class netWorking : MonoBehaviour
         }
     }
 
-    void HostGame(int RoomId)
+    void HostGame(string RoomId , Player player)
+    {
+        nc.GameId = RoomId;
+       
+
+    }
+
+
+   void JoinLobby(string Roomid)
     {
 
+
+    }
+
+    void ConnectionInfo(Player player)
+    {
        
 
     }

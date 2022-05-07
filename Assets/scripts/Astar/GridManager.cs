@@ -118,6 +118,7 @@ public class GridManager : MonoBehaviour
         // returns the index of the node from the array
         return nodeArray[_x, _y];
     }
+
     void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridSize.x, 1, gridSize.y));

@@ -6,12 +6,55 @@ public class DoorKey : MonoBehaviour
 {
     public Door ds;
 
+    //Rotational Speed
+    public float speed = 0f;
+
+    //Forward Direction
+    public bool ForwardX = false;
+    public bool ForwardY = false;
+    public bool ForwardZ = false;
+
+    //Reverse Direction
+    public bool ReverseX = false;
+    public bool ReverseY = false;
+    public bool ReverseZ = false;
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Player")
+        if (collision.collider.tag == "Players")
         {
             ds.OpenDoorKey();
             Destroy(gameObject);
         }
+    }
+    void Update()
+    {
+        //Forward Direction
+        if (ForwardX == true)
+        {
+            transform.Rotate(Time.deltaTime * speed, 0, 0, Space.Self);
+        }
+        if (ForwardY == true)
+        {
+            transform.Rotate(0, Time.deltaTime * speed, 0, Space.Self);
+        }
+        if (ForwardZ == true)
+        {
+            transform.Rotate(0, 0, Time.deltaTime * speed, Space.Self);
+        }
+        //Reverse Direction
+        if (ReverseX == true)
+        {
+            transform.Rotate(-Time.deltaTime * speed, 0, 0, Space.Self);
+        }
+        if (ReverseY == true)
+        {
+            transform.Rotate(0, -Time.deltaTime * speed, 0, Space.Self);
+        }
+        if (ReverseZ == true)
+        {
+            transform.Rotate(0, 0, -Time.deltaTime * speed, Space.Self);
+        }
+
     }
 }

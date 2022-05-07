@@ -781,8 +781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorCollider: {fileID: 2064071428}
-  IsTimer: 1
-  IsKey: 0
+  IsTimer: 0
+  IsKey: 1
   Timer: 0
   TimeLimit: 10
   isUnlocked: 0
@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 1836487365}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Players
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1107,6 +1107,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   RespawnPosition: {fileID: 1036275198}
+  hbs: {fileID: 0}
 --- !u!65 &1836487361
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1247,6 +1248,7 @@ MonoBehaviour:
   CameraIndex: 1
   NumberOfGuardsToSpawn: 3
   GuardAlertRange: 3
+  timer: 0
   detectionTime: 5
   AiPrefab: {fileID: 3473607934906136331, guid: f22ac50f61f58c64b8dc662fd71fdb7b, type: 3}
   GuardSpawnPosition: {fileID: 1036275198}
@@ -1416,6 +1418,7 @@ MonoBehaviour:
   CameraIndex: 3
   NumberOfGuardsToSpawn: 3
   GuardAlertRange: 3
+  timer: 0
   detectionTime: 5
   AiPrefab: {fileID: 3473607934906136331, guid: f22ac50f61f58c64b8dc662fd71fdb7b, type: 3}
   GuardSpawnPosition: {fileID: 1036275198}

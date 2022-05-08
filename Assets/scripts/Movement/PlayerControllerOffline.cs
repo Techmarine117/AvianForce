@@ -5,9 +5,10 @@ using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using Cinemachine;
 
-public class PlayerControllerOffline : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    
+    private netWorking networkingScript;
+    private NetworkComponent nwc;
 
     public MovementBehaviour movement;
     public AnimationBehaviour movementAnimation;
@@ -27,7 +28,8 @@ public class PlayerControllerOffline : MonoBehaviour
     private void Start()
     {
         movementAnimation.setupBehaviour();
-       
+        networkingScript = FindObjectOfType<netWorking>();
+        nwc = GetComponent<NetworkComponent>();
         vcam = GameObject.FindGameObjectWithTag("vCam");
     }
 
@@ -36,7 +38,6 @@ public class PlayerControllerOffline : MonoBehaviour
         if (Value.started)
         {
             movementAnimation.PlayerAttackAnimation();
-            Damage();
         }
     }
 

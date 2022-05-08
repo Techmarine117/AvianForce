@@ -25,8 +25,7 @@ public class netWorking : MonoBehaviour
         isConnected = true;
         print("Connected to server yay");
         // fetch name then assign to player
-        int id = UnityEngine.Random.Range(0, 9999);
-        player = new Player(socket,id, GetPlayerName.pname);
+        player = new Player(socket, GetPlayerName.pID, GetPlayerName.pname);
         //instantiate player character
 
         // Called when game scene loads.
@@ -34,7 +33,7 @@ public class netWorking : MonoBehaviour
 
     }
 
-    public int GetPlayerID()
+    public string GetPlayerID()
     {
         return player.ID;
     }
@@ -50,7 +49,7 @@ public class netWorking : MonoBehaviour
         print("Connected to server yay");
 
         //fetch player name from db
-       // player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
+        // player = new Player(Guid.NewGuid().ToString("N"), GetPlayerName.pname);
     }
 
 
@@ -76,7 +75,7 @@ public class netWorking : MonoBehaviour
                             RotationAndPositionPacket rpp = new RotationAndPositionPacket();
                             rpp.Deserialize(buffer);
 
-                            
+
                             break;
                         }
                     case BasePacket.PacketType.Instantiate:
@@ -109,17 +108,17 @@ public class netWorking : MonoBehaviour
                             HostGamePacket Hp = new HostGamePacket();
                             Hp.Deserialize(buffer);
 
-                            HostGame(Hp.RoomID , Hp.Player);
+                            HostGame(Hp.RoomID, Hp.Player);
                             break;
                         }
 
                     case BasePacket.PacketType.JoinPacket:
-                    {
+                        {
                             JoinPacket join = new JoinPacket();
                             join.Deserialize(buffer);
 
                             break;
-                    }
+                        }
 
 
                     case BasePacket.PacketType.Connection:
@@ -144,7 +143,7 @@ public class netWorking : MonoBehaviour
     public GameObject InstantiateOverNetwork(string prefabName, Vector3 position, Quaternion rotation)
     {
         GameObject go = Instantiate(Resources.Load($"Prefab/{prefabName}"), position, rotation) as GameObject;
-         nc = go.AddComponent<NetworkComponent>();
+        nc = go.AddComponent<NetworkComponent>();
         nc.OwnerID = player.ID;
         nc.GameObjectID = Guid.NewGuid().ToString("N");
         socket.Send(new InstantiatePacket(prefabName, position, rotation, nc.GameObjectID).Serialize());
@@ -155,7 +154,7 @@ public class netWorking : MonoBehaviour
     GameObject InstantiateFromResources(string prefabName, Vector3 position, Quaternion rotation, string gameObjectID, Player player)
     {
         GameObject go = Instantiate(Resources.Load($"Prefab/{prefabName}"), position, rotation) as GameObject;
-         nc = go.AddComponent<NetworkComponent>();
+        nc = go.AddComponent<NetworkComponent>();
         nc.OwnerID = player.ID;
         nc.GameObjectID = gameObjectID;
 
@@ -177,15 +176,15 @@ public class netWorking : MonoBehaviour
         }
     }
 
-    void HostGame(string RoomId , Player player)
+    void HostGame(string RoomId, Player player)
     {
         nc.GameId = RoomId;
-       
+
 
     }
 
 
-   void JoinLobby(string Roomid)
+    void JoinLobby(string Roomid)
     {
 
 
@@ -193,7 +192,7 @@ public class netWorking : MonoBehaviour
 
     void ConnectionInfo(Player player)
     {
-       
+
 
     }
 }

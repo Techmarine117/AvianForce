@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     public InputField nameText;
     
+   
+    
     public void UpdateText()
     {
         GetPlayerName.pname = nameText.text;
@@ -29,13 +31,6 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void CreateRoom()
-    {
 
-    }
-
-    public void JoinRoom()
-    {
-
-    }
+    
 }

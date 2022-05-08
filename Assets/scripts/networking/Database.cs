@@ -14,6 +14,7 @@ public class PlayerData
     public string username;
     public string id;
 
+
     //input field
 
     public PlayerData(string username, string playerID)
@@ -27,22 +28,28 @@ public class Database : MonoBehaviour
 {
     delegate void ReceivedJSON(string json);
     ReceivedJSON ReceivedJSONEvent;
-    string mydata;
+    [SerializeField]
     InputField UsernameField;
+    [SerializeField]
+    InputField IDField;
+    public bool done = false;
+    public PlayerData playerData;
 
-
-    void Start()
+    public void Login()
     {
-        //text input
-        //netWorking script and GetPlayerID
-        PlayerData playerData = new PlayerData(UsernameField.text,"12");
+        StartCoroutine(HTTPCall($"http://127.0.0.1:3000/find-user-data?username={UsernameField.text}&{IDField.text}", "get")); //these methods are here to test if the server works. 
+        //this need to be put into appropriate methods that are called when needed and not just automatically whenever the server is started.
+        playerData = new PlayerData(UsernameField.text, IDField.text);
+        GetPlayerName.pname = UsernameField.text;
+        GetPlayerName.pID = IDField.text;
+    }
+
+    public void RegisterUser()
+    {
+        playerData = new PlayerData(UsernameField.text, IDField.text);
         string json = JsonUtility.ToJson(playerData);
 
-        //StartCoroutine(HTTPCall("http://127.0.0.1:3000/save-user-data", "post", json));
-        StartCoroutine(HTTPCall($"http://127.0.0.1:3000/find-user-data?username={UsernameField.text}&id=12", "get")); //these methods are here to test if the server works. 
-        //this need to be put into appropriate methods that are called when needed and not just automatically whenever the server is started.
-        print(mydata);
-
+        StartCoroutine(HTTPCall("http://127.0.0.1:3000/save-user-data", "post", json));
     }
 
     void OnReceivedJSON(string json)

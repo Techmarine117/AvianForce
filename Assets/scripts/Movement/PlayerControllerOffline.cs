@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using Cinemachine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerOffline : MonoBehaviour
 {
     private netWorking networkingScript;
     private NetworkComponent nwc;

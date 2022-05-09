@@ -13,9 +13,7 @@ public class Guard : GAgent
         SubGoal s1 = new SubGoal("Chase", 1, false);
         goal.Add(s1, 1);
         SubGoal s2 = new SubGoal("Alert", 1, false);
-        goal.Add(s2, 2);
-
-        
+        goal.Add(s2, 2);      
     }
 
     public void CameraAlert(string camTag)
@@ -25,6 +23,15 @@ public class Guard : GAgent
         if (GetComponent<GoToCamera>())
         {
             GetComponent<GoToCamera>().targetTag = camTag;
+        }
+    }
+
+    public void Healthcheck()
+    {
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+            //score ++
         }
     }
 }

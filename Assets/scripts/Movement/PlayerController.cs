@@ -6,16 +6,15 @@ using UnityEngine.EventSystems;
 using Cinemachine;
 using UnityEngine.UI;
 
-public class PlayerControllerOffline : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     public int maxHealth = 100, currentHealth;
-    [SerializeField]
-    public Transform RespawnPosition;
+    private Transform RespawnPosition;
     [SerializeField]
     private Slider hbs;
 
-
+    public float attackRange = 4f;
     public MovementBehaviour movement;
     public AnimationBehaviour movementAnimation;
     public PlayerInput playerInput;
@@ -23,8 +22,6 @@ public class PlayerControllerOffline : MonoBehaviour
     public float moventSmoothingSpeed = 1f;
     private Vector3 rawInputMovement;
     private Vector3 smoothInput;
-    
-
 
     private GameObject vcam;
 
@@ -34,6 +31,7 @@ public class PlayerControllerOffline : MonoBehaviour
 
     private void Start()
     {
+        RespawnPosition = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
         movementAnimation.setupBehaviour();
        
         vcam = GameObject.FindGameObjectWithTag("vCam");
@@ -46,8 +44,20 @@ public class PlayerControllerOffline : MonoBehaviour
     {
         if (Value.started)
         {
+            Debug.Log("Attack");
+            RaycastHit hit;
             movementAnimation.PlayerAttackAnimation();
-            Damage();
+            if (Physics.Raycast(transform.position, transform.forward, out hit, attackRange))
+            {
+                Debug.Log(hit.collider.name);
+                if (hit.collider.tag == "Guard")
+                {
+                    guard = hit.collider.gameObject.GetComponent<Guard>();
+                    Damage();
+                    guard = null;
+                    Debug.Log("Damaged Guard");
+                }
+            }
         }
     }
 
@@ -102,12 +112,13 @@ public class PlayerControllerOffline : MonoBehaviour
         {
             // set the enemy health to 0%
             guard.enemyHealth = 0;
-
+            guard.Healthcheck();
         }
         else
         {
             // deduct health from the enemy
             guard.enemyHealth -= 25;
+            guard.Healthcheck();
         }
 
     }
@@ -134,5 +145,12 @@ public class PlayerControllerOffline : MonoBehaviour
 
     }
 
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Ray ray = new Ray(gameObject.transform.position, transform.forward);
+        Gizmos.DrawRay(ray);
+        Gizmos.color = Color.green;
+    }
 
 }

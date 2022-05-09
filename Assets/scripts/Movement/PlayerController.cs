@@ -4,10 +4,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class PlayerControllerOffline : MonoBehaviour
 {
-    
+
+    public int maxHealth = 100, currentHealth;
+    [SerializeField]
+    public Transform RespawnPosition;
+    [SerializeField]
+    private Slider hbs;
+
 
     public MovementBehaviour movement;
     public AnimationBehaviour movementAnimation;
@@ -16,6 +23,7 @@ public class PlayerControllerOffline : MonoBehaviour
     public float moventSmoothingSpeed = 1f;
     private Vector3 rawInputMovement;
     private Vector3 smoothInput;
+    
 
 
     private GameObject vcam;
@@ -29,6 +37,9 @@ public class PlayerControllerOffline : MonoBehaviour
         movementAnimation.setupBehaviour();
        
         vcam = GameObject.FindGameObjectWithTag("vCam");
+
+        currentHealth = maxHealth;
+        hbs.value = currentHealth / maxHealth;
     }
 
     public void OnAttack(InputAction.CallbackContext Value)
@@ -101,5 +112,27 @@ public class PlayerControllerOffline : MonoBehaviour
 
     }
 
-    
+    public void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage;
+        hbs.value = currentHealth / maxHealth;
+        if (currentHealth <= 0)
+        {
+            Respawn(RespawnPosition);
+        }
+        Debug.Log("" + damage);
+    }
+
+
+    private void Respawn(Transform respawnPoint)
+    {
+        // Penalties ?
+        // health Reset
+        currentHealth = maxHealth;
+        // Position Reset
+        gameObject.transform.position = respawnPoint.position;
+
+    }
+
+
 }

@@ -21,7 +21,7 @@ public class DoorKey : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Players")
+        if (collision.collider.tag == "Player")
         {
             ds.OpenDoorKey();
             Destroy(gameObject);

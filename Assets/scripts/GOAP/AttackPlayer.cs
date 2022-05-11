@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AttackPlayer : GAction
 {
-    public GameObject attackCol;
     public float attackRange;
     public int Damage = 10;
 

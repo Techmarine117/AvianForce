@@ -340,10 +340,9 @@ MonoBehaviour:
   afterEffects:
   - Key: FreePins
     value: 0
-  detectionRange: 0
-  chaseRange: 0
+  detectionRange: 20
+  chaseRange: 25
   running: 0
-  attackCol: {fileID: 0}
   attackRange: 5
   Damage: 10
 --- !u!114 &2222688373474724690
@@ -367,10 +366,10 @@ MonoBehaviour:
   - Key: Alert
     value: 0
   afterEffects: []
-  detectionRange: 0
-  chaseRange: 0
+  detectionRange: 20
+  chaseRange: 10
   running: 0
-  CamRange: 0
+  CamRange: 3
   Damage: 10
 --- !u!114 &2222688373474724701
 MonoBehaviour:
@@ -395,8 +394,8 @@ MonoBehaviour:
   afterEffects:
   - Key: Chase
     value: 0
-  detectionRange: 0
-  chaseRange: 0
+  detectionRange: 20
+  chaseRange: 25
   running: 0
 --- !u!114 &2222688373474724699
 MonoBehaviour:
@@ -421,8 +420,8 @@ MonoBehaviour:
     value: 0
   - Key: AattckRange
     value: 0
-  detectionRange: 0
-  chaseRange: 0
+  detectionRange: 20
+  chaseRange: 5
   running: 0
 --- !u!136 &2104524593
 CapsuleCollider:

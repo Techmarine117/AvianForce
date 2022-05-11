@@ -5,18 +5,20 @@ using UnityEngine;
 public class WinCondition : MonoBehaviour
 {
     public bool isPickedup;
+    public GameObject Object;
 
-    void Start()
-    {
-        
-    }
+
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isPickedup)
+       
+        if (isPickedup == true)
         {
             if (other.tag == "Players")
             {
+                Object.SetActive(true);
+
                 // win
             }
         }

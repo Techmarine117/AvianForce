@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
     {
         if (Value.started)
         {
-            Debug.Log("Attack");
             RaycastHit hit;
             movementAnimation.PlayerAttackAnimation();
             if (Physics.Raycast(transform.position, transform.forward, out hit, attackRange))
@@ -55,7 +54,6 @@ public class PlayerController : MonoBehaviour
                     guard = hit.collider.gameObject.GetComponent<Guard>();
                     Damage();
                     guard = null;
-                    Debug.Log("Damaged Guard");
                 }
             }
         }

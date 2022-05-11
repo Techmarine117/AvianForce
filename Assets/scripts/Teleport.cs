@@ -15,7 +15,7 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && other.GetComponent<PlayerController>().isVulture == false)
+        if (other.tag == "Players" && other.GetComponent<PlayerController>().isVulture == false)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {

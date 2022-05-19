@@ -18,7 +18,7 @@ public class PlayerTest : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        hbs.value = currentHealth / maxHealth;
+       // hbs.value = currentHealth / maxHealth;
     }
 
    
@@ -26,7 +26,7 @@ public class PlayerTest : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth = currentHealth - damage;
-        hbs.value = currentHealth / maxHealth;
+       // hbs.value = currentHealth / maxHealth;
         if (currentHealth <= 0)
         {
            Respawn(RespawnPosition);

@@ -186,13 +186,18 @@ public class netWorking : MonoBehaviour
 
     void JoinLobby(string Roomid)
     {
+        //GameObject go = Instantiate(Resources.Load($"Prefab/{prefabName}"), position, rotation) as GameObject;
+        //nc = go.AddComponent<NetworkComponent>();
+        //nc.OwnerID = player.ID;
+        //nc.GameObjectID = Guid.NewGuid().ToString("N");
+        socket.Send(new JoinPacket(Roomid).Serialize());
 
 
     }
 
     void ConnectionInfo(Player player)
     {
-
+        nc.name = player.Name;
 
     }
 }

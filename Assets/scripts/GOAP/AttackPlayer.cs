@@ -9,6 +9,7 @@ public class AttackPlayer : GAction
 
     public override bool PrePerform()
     {
+        Debug.Log("ATTTTAAACKK");
         return true;
     }
 
@@ -16,7 +17,7 @@ public class AttackPlayer : GAction
     {
        if(Vector3.Distance(target.transform.position,gameObject.transform.position) <= attackRange)
         {
-            target.GetComponent<PlayerTest>().TakeDamage(Damage);
+            target.GetComponent<PlayerController>().TakeDamage(Damage);
         }
         return true;
     }

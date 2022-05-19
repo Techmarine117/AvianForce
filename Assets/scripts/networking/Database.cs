@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Networking;
 using System.Text;
 using UnityEngine.Networking;
 using System;
@@ -37,11 +36,13 @@ public class Database : MonoBehaviour
     //gets the player's information which allows them to login
     public void Login()
     {
-        StartCoroutine(HTTPCall($"http://127.0.0.1:3000/find-user-data?username={UsernameField.text}&{IDField.text}", "get")); //these methods are here to test if the server works. 
-        //this need to be put into appropriate methods that are called when needed and not just automatically whenever the server is started.
+       
+        StartCoroutine(HTTPCall($"http://127.0.0.1:3000/find-user-data?username={UsernameField.text}&{IDField.text}", "get")); 
         playerData = new PlayerData(UsernameField.text, IDField.text);
         GetPlayerName.pname = UsernameField.text;
         GetPlayerName.pID = IDField.text;
+
+        
     }
     //register a new user
     public void RegisterUser()

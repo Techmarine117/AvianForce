@@ -203,6 +203,10 @@ PrefabInstance:
       value: Guard (3)
       objectReference: {fileID: 0}
     - target: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
       propertyPath: m_TagString
       value: Guard
       objectReference: {fileID: 0}
@@ -1040,6 +1044,10 @@ PrefabInstance:
       value: Guard (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
       propertyPath: m_TagString
       value: Guard
       objectReference: {fileID: 0}
@@ -1402,7 +1410,6 @@ GameObject:
   - component: {fileID: 1244089689}
   - component: {fileID: 1244089688}
   - component: {fileID: 1244089687}
-  - component: {fileID: 1244089691}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1487,22 +1494,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1244089691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244089686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ac41862f5a0b3b438cf14560efabe76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  RespawnPosition: {fileID: 0}
-  hbs: {fileID: 0}
 --- !u!1 &1427284098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
@@ -2292,6 +2283,10 @@ PrefabInstance:
       value: Guard (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
       propertyPath: m_TagString
       value: Guard
       objectReference: {fileID: 0}
@@ -2376,6 +2371,10 @@ PrefabInstance:
     - target: {fileID: 4219098119265332745, guid: a97d0faf16be1df419013ecb738ed4ca, type: 3}
       propertyPath: m_Name
       value: Guard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219098119265332745, guid: a97d0faf16be1df419013ecb738ed4ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a97d0faf16be1df419013ecb738ed4ca, type: 3}

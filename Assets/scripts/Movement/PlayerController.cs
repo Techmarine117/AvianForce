@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         vcam = GameObject.FindGameObjectWithTag("vCam");
 
         currentHealth = maxHealth;
-        hbs.value = currentHealth / maxHealth;
+        //hbs.value = currentHealth / maxHealth;
     }
 
     public void OnAttack(InputAction.CallbackContext Value)
@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth = currentHealth - damage;
-        hbs.value = currentHealth / maxHealth;
+        //hbs.value = currentHealth / maxHealth;
         if (currentHealth <= 0)
         {
             Respawn(RespawnPosition);

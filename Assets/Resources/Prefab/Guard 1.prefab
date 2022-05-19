@@ -340,8 +340,8 @@ MonoBehaviour:
   afterEffects:
   - Key: FreePins
     value: 0
-  detectionRange: 20
-  chaseRange: 25
+  detectionRange: 0
+  chaseRange: 0
   running: 0
   attackRange: 5
   Damage: 10

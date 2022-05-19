@@ -32,7 +32,6 @@ public class MovementBehaviour : MonoBehaviour
     {
         Vector3 movement = CamDirection(moveDirection) * moveSpeed * Time.deltaTime;
         prb.MovePosition(transform.position + movement);
-        Debug.Log("movetest");
     }
 
     void TurnPlayer()

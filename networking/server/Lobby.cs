@@ -95,14 +95,18 @@ namespace server
                             case BasePacket.PacketType.JoinPacket:  
                                 JoinPacket jp = new JoinPacket();
                                 jp.Deserialize(buffer);
-
+                                
                                 Room room = rooms.GetRoom(jp.RoomID);
+                                
                                 //if room id does not match, then try for next room. If room id match, then add player to the room and remove player from lobby
                                 if (room != null)
                                 {
                                     Console.WriteLine(jp.Player.Name + "Joined the room");
                                     room.AddPlayer(players[j]);
                                     players.RemoveAt(j);
+                                }
+                                else { 
+                                    Console.WriteLine("Room null bro");
                                 }
 
                                 break;

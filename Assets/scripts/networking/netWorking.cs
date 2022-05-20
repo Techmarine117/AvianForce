@@ -221,7 +221,7 @@ public class netWorking : MonoBehaviour
     }
 
 
- public   void JoinLobby()
+    public void JoinLobby()
     { 
         string Roomid = "0";
        

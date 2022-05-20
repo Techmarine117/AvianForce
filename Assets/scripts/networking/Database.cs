@@ -86,5 +86,49 @@ public class Database : MonoBehaviour
                 print(request.error);
             }
         }
+    }/**
+    String OnReceivedJSON(string json)
+    {
+        PlayerData p = JsonUtility.FromJson<PlayerData>(json);
+        return p.username;
+        print(p.username);
+        print(p.id);
     }
+
+    IEnumerator HTTPCall(string url, string method, string json = "")
+    {
+        using (UnityWebRequest request = new UnityWebRequest(url, method))
+        {
+            if (method == "post")
+            {
+                byte[] data = Encoding.UTF8.GetBytes(json);
+                request.uploadHandler = new UploadHandlerRaw(data);
+                Debug.Log("POSTED: " + data);
+            }
+            else if (method == "GET")
+            {
+                OnReceivedJSON(json);
+                Debug.Log("GOTTED: " + json);
+            }
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+
+            if (request.isDone)
+            {
+                Debug.Log("Yo the httpcall aync dilly dally is done yo");
+            }
+            yield return request.SendWebRequest();
+
+            if (request.error == null)
+            {
+                print("all good");
+                print(request.downloadHandler.text);
+            }
+            else
+            {
+                print("error");
+                print(request.error);
+            }
+        }
+    }***/
 }

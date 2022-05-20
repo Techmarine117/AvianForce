@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using UnityEngine;
+//using UnityEngine;
 
 namespace server
 {
@@ -14,17 +14,20 @@ namespace server
         static void Main(string[] args)
         {
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            List<Rooms> rooms = new List<Rooms>();
-
+          
+            socket.Blocking = false;
             socket.Bind(new IPEndPoint(IPAddress.Any, 9000));
 
             Console.WriteLine("waiting for a response");
             socket.Listen();
 
             List<Socket> clients = new List<Socket>();
+            Lobby lobby = new Lobby();
+            Rooms rooms = new Rooms();
 
             while (true)
             {
+                // Connect to server
                 try
                 {
                     clients.Add(socket.Accept());
@@ -36,46 +39,53 @@ namespace server
                     if (ex.SocketErrorCode != SocketError.WouldBlock)
                         Console.WriteLine(ex);
                 }
-                for (int k = rooms.Count - 1; k >= 0; k--)
-                {
-
-                }
+               
 
                 for (int i = clients.Count - 1; i >= 0; i--)
                 {
-                    try
+                    // Connect to lobby
+                    if (clients[i].Available > 0)
                     {
-                        byte[] recieveBuffer = new byte[clients[i].Available];
-                        clients[i].Receive(recieveBuffer);
-
-                        for (int j = clients.Count - 1; j >= 0; j--)
+                        try
                         {
-                            if (i == j)
-                                continue;
+                            Socket client = clients[i];
+                            byte[] recieveBuffer = new byte[clients[i].Available];
+                            clients[i].Receive(recieveBuffer);
+                            BasePacket bp = new BasePacket(client);
+                            bp.Deserialize(recieveBuffer);
 
-                            clients[j].Send(recieveBuffer);
-                        }
+                            Console.WriteLine("mESSAGE RECEIVED");
+                            Console.WriteLine(bp.Type);
 
-                        
-                    }
-                    catch (SocketException ex)
-                    {
-                        if (ex.SocketErrorCode != SocketError.WouldBlock)
-                        {
-                            if (ex.SocketErrorCode == SocketError.ConnectionAborted || ex.SocketErrorCode == SocketError.ConnectionReset)
+                            if(bp.Type == BasePacket.PacketType.Connection)
                             {
-                                clients[i].Close();
+                                Console.WriteLine("Connection accepted");
+                                lobby.AddPlayer(bp.Player);
                                 clients.RemoveAt(i);
-                                Console.WriteLine($"Client{i} disconnected");
                             }
-                            else
+                        }
+                        catch (SocketException ex)
+                        {
+                            if (ex.SocketErrorCode != SocketError.WouldBlock)
                             {
-                                Console.WriteLine(ex);
+                                if (ex.SocketErrorCode == SocketError.ConnectionAborted || ex.SocketErrorCode == SocketError.ConnectionReset)
+                                {
+                                    clients[i].Close();
+                                    clients.RemoveAt(i);
+                                    Console.WriteLine($"Client{i} disconnected");
+                                }
+                                else
+                                {
+                                    Console.WriteLine(ex);
+                                }
                             }
                         }
                     }
                 }
+
+            lobby.Update(rooms);
             }
+
         }
     }
 }

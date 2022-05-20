@@ -72,14 +72,14 @@ public class PlayerController : MonoBehaviour
     {
         if (true)//networkingScript.GetPlayerID() == nwc.OwnerID)
         {
-            if (vcam.GetComponent<CinemachineVirtualCamera>().Follow == null && vcam.GetComponent<CinemachineVirtualCamera>())
+           /* if (vcam.GetComponent<CinemachineVirtualCamera>().Follow == null && vcam.GetComponent<CinemachineVirtualCamera>())
             {
                 vcam.GetComponent<CinemachineVirtualCamera>().Follow = transform;
                 vcam.GetComponent<CinemachineVirtualCamera>().LookAt = transform;
             }
             CalculateMovementInputSmoothing();
             UpdatePlayerMovement();
-            UpdatePlayerAnimationMovement();
+            UpdatePlayerAnimationMovement();*/
         }
     }
 

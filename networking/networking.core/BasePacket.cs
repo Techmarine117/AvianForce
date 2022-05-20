@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using System.IO;
+using System.Net.Sockets;
+
 
 namespace CoreNetworking
-{
+{//template for all other packets, contains base traits for all packets
     public class BasePacket
     {
         protected MemoryStream ms;
@@ -18,28 +16,32 @@ namespace CoreNetworking
             None = -1,
 
             Transform,
-            Instatite,
+            Instantiate,
             Destroy,
             Position,
             Rotation,
             Scale,
             RotationAndPosition,
-            HostGamePacket
+            HostGamePacket,
+            JoinPacket,
+            Connection
         }
 
         public PacketType Type { get; private set; }
-        public Player Player { get; private set; }
+        Socket socket;
+        public Player Player { get;  set; }
 
-        public BasePacket()
+        public BasePacket(Socket passedSocket)
         {
+            this.socket = passedSocket;
             Type = PacketType.None;
-            Player = null;
         }
 
-        public BasePacket(PacketType type, Player player)
+        public BasePacket(PacketType type)
         {
             Type = type;
-            Player = player;
+            Player = new Player();
+           
         }
 
         protected void StartSerialization()
@@ -58,7 +60,7 @@ namespace CoreNetworking
             br = new BinaryReader(ms);
 
             Type = (PacketType)br.ReadInt32();
-            Player = new Player(br.ReadString(), br.ReadString());
+            Player = new Player(socket, br.ReadString(), br.ReadString());
         }
 
         public void Deserialize(byte[] buffer)
@@ -67,7 +69,7 @@ namespace CoreNetworking
             br = new BinaryReader(ms);
 
             Type = (PacketType)br.ReadInt32();
-            Player = new Player(br.ReadString(), br.ReadString());
+            Player = new Player(socket,br.ReadString(), br.ReadString());
         }
     }
 }

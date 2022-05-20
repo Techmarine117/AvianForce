@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CoreNetworking
-{
+{//called when player moves tp share player position
     public class PositionPacket : BasePacket
     {
         public Vector3 Position { get; private set; }
 
-        public PositionPacket() : base(PacketType.Position, null)
+        public PositionPacket() : base(PacketType.Position)
         {
             Position = Vector3.zero;
         }
 
-        public PositionPacket(Vector3 position, Player player) : base(PacketType.Position, player)
+        public PositionPacket(Vector3 position, Player player) : base(PacketType.Position)
         {
             Position = position;
         }

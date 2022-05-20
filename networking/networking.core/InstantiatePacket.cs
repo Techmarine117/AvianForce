@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CoreNetworking
-{
+{ //instantiate player object
     public class InstantiatePacket : BasePacket
     {
         public string GameObjectID { get; private set; }
@@ -15,7 +15,7 @@ namespace CoreNetworking
         public Vector3 Position { get; private set; }
         public Quaternion Rotation { get; private set; }
 
-        public InstantiatePacket() : base(PacketType.Instatite, null)
+        public InstantiatePacket() : base(PacketType.Instantiate)
         {
             GameObjectID = "";
             PrefabName = "";
@@ -23,7 +23,7 @@ namespace CoreNetworking
             Rotation = Quaternion.identity;
         }
 
-        public InstantiatePacket(string prefabName, Vector3 position, Quaternion rotation, string gameObjectID, Player player) : base(PacketType.Instatite, player)
+        public InstantiatePacket(string prefabName, Vector3 position, Quaternion rotation, string gameObjectID) : base(PacketType.Instantiate)
         {
             GameObjectID = gameObjectID;
             PrefabName = prefabName;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CoreNetworking
-{
+{ //gets the postion of object and rotation of that object
     public class RotationAndPositionPacket : BasePacket
     {
 
@@ -14,13 +14,13 @@ namespace CoreNetworking
         public Vector3 Position { get; private set; }
         public Quaternion Rotation { get; private set; }
 
-        public RotationAndPositionPacket() : base(PacketType.RotationAndPosition, null)
+        public RotationAndPositionPacket() : base(PacketType.RotationAndPosition)
         {
             Position = Vector3.zero;
             Rotation = Quaternion.identity;
         }
 
-        public RotationAndPositionPacket(Vector3 position, Player player , Quaternion rotation) : base(PacketType.RotationAndPosition, player)
+        public RotationAndPositionPacket(Vector3 position, Player player , Quaternion rotation) : base(PacketType.RotationAndPosition)
         {
             Position = position;
             Rotation = rotation;

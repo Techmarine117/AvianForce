@@ -1,0 +1,46 @@
+﻿
+1) Connection packet
+2) Host game
+3) send player information
+---> server will create a room
+4) Join lobby
+5) send player information
+----> server will put new player in romm
+
+
+
+
+clients = ()
+Players = ()
+
+socket = ...
+
+
+while true(
+
+try to accept new connection then clients.add
+
+for client in clients(
+
+buffer = client.read()
+
+if buffer.Type == ConnectionPacket(
+Do someting
+)
+
+)
+
+
+)
+
+
+Null exception -> debug this
+Create: A room with two players, you have access to their sockets socket& and socket2
+
+socket1 send a packet P o the server. The server needs to send it on packet2. packet = socket1.Receive(); socket2.Send(packet)
+Then handle the received packets with switch
+
+
+
+
+

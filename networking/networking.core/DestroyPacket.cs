@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CoreNetworking
-{
+{//destroys an object over the network
     public class DestroyPacket : BasePacket
     {
         public string GameObjectID { get; private set; }
 
-        public DestroyPacket() : base(PacketType.Destroy, null)
+        public DestroyPacket() : base(PacketType.Destroy)
         {
             GameObjectID = "";
         }
 
-        public DestroyPacket(string gameObjectID, Player player) : base(PacketType.Destroy, player)
+        public DestroyPacket(string gameObjectID, Player player) : base(PacketType.Destroy)
         {
             GameObjectID = gameObjectID;
         }

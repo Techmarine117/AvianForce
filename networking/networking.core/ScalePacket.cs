@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CoreNetworking
-{
+{ //determines an objects scale over the nerowrk
     public class ScalePacket : BasePacket
     {
         public Vector3 Scale { get; private set; }
 
-        public ScalePacket() : base(PacketType.Scale, null)
+        public ScalePacket() : base(PacketType.Scale)
         {
             Scale = Vector3.zero;
         }
 
-        public ScalePacket(Vector3 scale, Player player) : base(PacketType.Scale, player)
+        public ScalePacket(Vector3 scale) : base(PacketType.Scale)
         {
             Scale = scale;
         }

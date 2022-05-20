@@ -14,9 +14,12 @@ public class netWorking : MonoBehaviour
     Player player;
     bool isConnected = false;
     NetworkComponent nc;
+    Database db;
+    PlayerData playerData;
 
     void Start()
     {
+
         socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         print("Connecting to server");
         socket.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9000));
@@ -25,17 +28,31 @@ public class netWorking : MonoBehaviour
         isConnected = true;
         print("Connected to server yay");
         // fetch name then assign to player
-        player = new Player(socket, GetPlayerName.pID, GetPlayerName.pname);
+        player = new Player(socket, "1", "we");
         //instantiate player character
 
         // Called when game scene loads.
         InstantiateOverNetwork(GetPlayerName.CharacterType, Vector3.zero, Quaternion.identity);
+       
+
+
 
     }
-
+   
     public string GetPlayerID()
     {
         return player.ID;
+    }
+
+    public void Connect()
+    {
+        print("Connected");
+        ConnectionPacket connection = new ConnectionPacket();
+        print(player == null);
+        connection.Player = player;
+        socket.Send(connection.Serialize());
+
+
     }
 
     public void ServerConnect()
@@ -62,6 +79,8 @@ public class netWorking : MonoBehaviour
                 byte[] buffer = new byte[socket.Available];
                 socket.Receive(buffer);
 
+                Debug.Log("Packet Received");
+
                 BasePacket bp = new BasePacket(socket);
                 bp.Deserialize(buffer);
 
@@ -80,6 +99,7 @@ public class netWorking : MonoBehaviour
                         }
                     case BasePacket.PacketType.Instantiate:
                         {
+                            Debug.Log("Received instantiate packet");
                             InstantiatePacket ip = new InstantiatePacket();
                             ip.Deserialize(buffer);
 
@@ -127,7 +147,7 @@ public class netWorking : MonoBehaviour
                             CP.Deserialize(buffer);
 
 
-                            ConnectionInfo(CP.Player);
+                           
                             break;
                         }
 
@@ -179,25 +199,35 @@ public class netWorking : MonoBehaviour
     void HostGame(string RoomId, Player player)
     {
         nc.GameId = RoomId;
+        socket.Send(new HostGamePacket(RoomId).Serialize());
 
 
     }
 
 
-    void JoinLobby(string Roomid)
+   public void HostGame_tmp()
     {
-        //GameObject go = Instantiate(Resources.Load($"Prefab/{prefabName}"), position, rotation) as GameObject;
-        //nc = go.AddComponent<NetworkComponent>();
-        //nc.OwnerID = player.ID;
-        //nc.GameObjectID = Guid.NewGuid().ToString("N");
+        Debug.Log("Button clicked!");
+
+        
+
+        string RoomId = "0";
+        nc.GameId = RoomId;
+        socket.Send(new HostGamePacket(RoomId).Serialize());
+
+        Debug.Log("Packet sent!");
+
+
+    }
+
+
+ public   void JoinLobby()
+    { 
+        string Roomid = "0";
+       
         socket.Send(new JoinPacket(Roomid).Serialize());
 
 
     }
 
-    void ConnectionInfo(Player player)
-    {
-        nc.name = player.Name;
-
-    }
 }

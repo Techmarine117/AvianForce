@@ -26,9 +26,7 @@ C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\server.runtimeconfi
 C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\server.dll
 C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\server.pdb
 C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\networking.core.dll
-C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\UnityEngine.dll
 C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\networking.core.pdb
-C:\Users\Rokan\AvianForce\networking\server\bin\Debug\net5.0\UnityEngine.xml
 C:\Users\Rokan\AvianForce\networking\server\obj\Debug\net5.0\server.csproj.AssemblyReference.cache
 C:\Users\Rokan\AvianForce\networking\server\obj\Debug\net5.0\server.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Rokan\AvianForce\networking\server\obj\Debug\net5.0\server.AssemblyInfoInputs.cache
